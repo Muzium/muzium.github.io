@@ -4,7 +4,7 @@
   --neut-L50: rgba(255,255,255,0.5);
   --neut-L30: rgba(255,255,255,0.3);
   --neut-L10: rgba(255,255,255,0.1);
-  --banner-dim: rgba(0,0,0,0.2);
+  --banner-dim: none;
   --primary-hue: 250;
   --main-title: rgba(255,255,255,0.9);
   --btn-content: var(--neut-L75);
