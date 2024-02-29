@@ -4,7 +4,8 @@
   --neut-L50: rgba(255,255,255,0.5);
   --neut-L30: rgba(255,255,255,0.3);
   --neut-L10: rgba(255,255,255,0.1);
-  --banner-dim: none;
+  --banner-dim: linear-gradient(to bottom, oklch(0.25 0.02 250), transparent);
+  --banner-matte: 0.85;
   --primary-hue: 250;
   --main-title: rgba(255,255,255,0.9);
   --btn-content: var(--neut-L75);
@@ -108,7 +109,8 @@
 }
 :root[theme='light'] {
   --card-background: #fff;
-  --banner-dim: none;
+  --banner-dim: linear-gradient(to bottom, #fff, transparent);
+  --banner-matte: 1;
   --neut-L90: rgba(0,0,0,0.9);
   --neut-L75: rgba(0,0,0,0.75);
   --neut-L50: rgba(0,0,0,0.5);
@@ -452,6 +454,7 @@ navbar,
 .article-inner,
 #article-nav .article-nav-btn,
 .comment-card,
+.wl-comment-card,
 #page-nav #num-bar,
 #page-nav .page-nav-btn,
 .archive-main-card,
@@ -540,6 +543,7 @@ navbar,
 }
 .article-title,
 .comment-card .main-title,
+.wl-comment-card .main-title,
 .archive-main-card .archive-title {
   text-decoration: none;
   font-size: 32px;
@@ -555,6 +559,7 @@ navbar,
 @media screen and (max-width: 767px) {
   .article-title,
   .comment-card .main-title,
+  .wl-comment-card .main-title,
   .archive-main-card .archive-title {
     font-size: 28px;
   }
@@ -675,6 +680,183 @@ navbar,
 .article-entry dt,
 .widget dt {
   font-weight: bold;
+}
+#banner {
+  height: 50vh !important;
+}
+#banner img {
+  z-index: -50;
+  position: absolute;
+  max-width: 1200px;
+  margin-top: 86px;
+  height: auto !important;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  -moz-transition: -moz-transform 0.5s ease-in-out;
+  -ms-transition: -ms-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  filter: brightness(var(--banner-matte));
+}
+@media screen and (max-width: 767px) {
+  #banner img {
+    margin-top: 84px;
+    max-width: 840px;
+    width: auto !important;
+    height: auto !important;
+    object-fit: fill !important;
+    object-position: center;
+  }
+  #banner img.anime_1 {
+    -webkit-animation: run1 20s infinite linear;
+    -moz-animation: run1 20s infinite linear;
+    -ms-animation: run1 20s infinite linear;
+    animation: run1 20s infinite linear;
+  }
+  #banner img.anime_2 {
+    -webkit-animation: run2 20s infinite linear;
+    -moz-animation: run2 20s infinite linear;
+    -ms-animation: run2 20s infinite linear;
+    animation: run2 20s infinite linear;
+  }
+}
+#banner #banner-dim {
+  z-index: -100;
+}
+#nav {
+  height: 200px !important;
+  z-index: 100;
+}
+@media screen and (max-width: 767px) {
+  #nav {
+    height: 160px !important;
+  }
+}
+:root #banner {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.right-panel.with-pic:hover {
+  min-width: 38%;
+}
+@-moz-keyframes run1 {
+  0% {
+    -webkit-transform: translateX(-102%);
+    -moz-transform: translateX(-102%);
+    -ms-transform: translateX(-102%);
+    transform: translateX(-102%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes run1 {
+  0% {
+    -webkit-transform: translateX(-102%);
+    -moz-transform: translateX(-102%);
+    -ms-transform: translateX(-102%);
+    transform: translateX(-102%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@-o-keyframes run1 {
+  0% {
+    -webkit-transform: translateX(-102%);
+    -moz-transform: translateX(-102%);
+    -ms-transform: translateX(-102%);
+    transform: translateX(-102%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes run1 {
+  0% {
+    -webkit-transform: translateX(-102%);
+    -moz-transform: translateX(-102%);
+    -ms-transform: translateX(-102%);
+    transform: translateX(-102%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@-moz-keyframes run2 {
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(102%);
+    -moz-transform: translateX(102%);
+    -ms-transform: translateX(102%);
+    transform: translateX(102%);
+  }
+}
+@-webkit-keyframes run2 {
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(102%);
+    -moz-transform: translateX(102%);
+    -ms-transform: translateX(102%);
+    transform: translateX(102%);
+  }
+}
+@-o-keyframes run2 {
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(102%);
+    -moz-transform: translateX(102%);
+    -ms-transform: translateX(102%);
+    transform: translateX(102%);
+  }
+}
+@keyframes run2 {
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(102%);
+    -moz-transform: translateX(102%);
+    -ms-transform: translateX(102%);
+    transform: translateX(102%);
+  }
 }
 :root #nav {
   height: 72px;
@@ -1879,6 +2061,28 @@ a.article-title:active {
 .tk-comments-container .tk-submit {
   position: relative;
   left: -70px;
+}
+.wl-comment-card {
+  padding: 32px 40px 0 40px;
+}
+.wl-comment-card * {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  transition: none;
+}
+.wl-comment-card .title-bar {
+  margin-bottom: 24px;
+}
+.wl-count {
+  color: var(--article-text);
+}
+.wl-panel {
+  background: var(--input-field);
+}
+:root {
+  --waline-theme-color: var(--primary-btn-bg);
+  --waline-active-color: var(--primary-btn-bg);
 }
 .archives-wrap {
   margin: 16px 0;
