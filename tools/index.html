@@ -20,15 +20,15 @@
   <link rel="preload" href="/css/fonts/Roboto-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
   <link rel="preload" href="/css/fonts/Roboto-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
-  <meta name="description" content="适用于Surythm（MultiSpeaker）系列的OpenUTAU for DiffSinger多语言音素器暂无">
+  <meta name="description" content="适用于OpenUTAU for DiffSinger的多语言音素器特点 音素输入模式； 音素分类与赋权； 自由增删字典文件与内容。  新增功能 中文合成场景下汉字亦可添加字典后缀识别； 输入歌词不存在于默认字典（Default）中时，将依次遍历其他字典找到能够对应上的为止； 如果输入歌词在所有字典中均找不到值则自动识别为Default字典下的 “la” 。  调整 音素输入模式触发机制由元辅音分隔">
 <meta property="og:type" content="website">
 <meta property="og:title" content="辅助工具配布">
 <meta property="og:url" content="https://muzium.github.io/tools/index.html">
 <meta property="og:site_name" content="藏声馆">
-<meta property="og:description" content="适用于Surythm（MultiSpeaker）系列的OpenUTAU for DiffSinger多语言音素器暂无">
+<meta property="og:description" content="适用于OpenUTAU for DiffSinger的多语言音素器特点 音素输入模式； 音素分类与赋权； 自由增删字典文件与内容。  新增功能 中文合成场景下汉字亦可添加字典后缀识别； 输入歌词不存在于默认字典（Default）中时，将依次遍历其他字典找到能够对应上的为止； 如果输入歌词在所有字典中均找不到值则自动识别为Default字典下的 “la” 。  调整 音素输入模式触发机制由元辅音分隔">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-01-09T13:42:08.000Z">
-<meta property="article:modified_time" content="2024-02-29T15:55:04.994Z">
+<meta property="article:modified_time" content="2024-05-19T02:44:17.016Z">
 <meta property="article:author" content="Muzium">
 <meta name="twitter:card" content="summary">
   
@@ -218,14 +218,49 @@
   
           </div>
           <div class="wordcount need-seperator meta-info">
-            56 词 
+            1.1k 词 
           </div>
         </div>
         
       </header>
       <div class="e-content article-entry" itemprop="articleBody">
         
-          <h2 id="适用于Surythm（MultiSpeaker）系列的OpenUTAU-for-DiffSinger多语言音素器"><a href="#适用于Surythm（MultiSpeaker）系列的OpenUTAU-for-DiffSinger多语言音素器" class="headerlink" title="适用于Surythm（MultiSpeaker）系列的OpenUTAU for DiffSinger多语言音素器"></a>适用于Surythm（MultiSpeaker）系列的OpenUTAU for DiffSinger多语言音素器</h2><p>暂无</p>
+          <h2 id="适用于OpenUTAU-for-DiffSinger的多语言音素器"><a href="#适用于OpenUTAU-for-DiffSinger的多语言音素器" class="headerlink" title="适用于OpenUTAU for DiffSinger的多语言音素器"></a>适用于OpenUTAU for DiffSinger的多语言音素器</h2><h3 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h3><ol>
+<li>音素输入模式；</li>
+<li>音素分类与赋权；</li>
+<li>自由增删字典文件与内容。</li>
+</ol>
+<h3 id="新增功能"><a href="#新增功能" class="headerlink" title="新增功能"></a>新增功能</h3><ol>
+<li>中文合成场景下汉字亦可添加字典后缀识别；</li>
+<li>输入歌词不存在于默认字典（Default）中时，将依次遍历其他字典找到能够对应上的为止；</li>
+<li>如果输入歌词在所有字典中均找不到值则自动识别为Default字典下的 “la” 。</li>
+</ol>
+<h3 id="调整"><a href="#调整" class="headerlink" title="调整"></a>调整</h3><ol>
+<li>音素输入模式触发机制由元辅音分隔符 “|” 改为歌词首位输入的音素模式识别符 “.” ，在 “.” 后直接输入以空格分离的音素就可以自动识别， “.” 与音素不需要以空格分隔，输入单个音素时默认以元音形式输入，多个音素将考虑时长权重；</li>
+<li>“+” 切分音符或创建倚音时不再影响音素时长；</li>
+<li>修复部分歌词输入时辅音时长变为 0 的问题。</li>
+</ol>
+<h3 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h3><ol>
+<li>将 DiffFonemizer.dll 置于 OpenUTAU 根目录下的 Plugins 子目录中；</li>
+<li>将 Fconfig.zip 解压后置于歌手根目录中，形成 歌手文件夹 &gt; Fconfig 的文件层级（Fconfig 与 dsdur 等文件夹位于同一层级）；</li>
+<li>启动 OpenUTAU 选择 DIFF F 音素器即可使用。</li>
+</ol>
+<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><ol>
+<li>音素分类与赋权文件（PhonesDefinition.csv）文件名不可修改；</li>
+<li>音素分类与赋权文件（PhonesDefinition.csv）为标准 *.csv 文件，推荐于 Microsoft Excel 下编辑导出；</li>
+<li>音素分类与赋权文件（PhonesDefinition.csv）内部结构为 音素名&#x2F;（首要）音素属性&#x2F;（次要）音素属性&#x2F;时长权重 ，其中音素属性必须为以下几种名称，时长权重为大于 0.1 的浮点数，次要音素属性暂未开发配套功能；</li>
+</ol>
+<blockquote>
+<p>元音类：Vowel（单元音）、Diphthong（复合元音）、Breath（呼吸）、Silence（静音）、Mainvowel（韵腹）；<br>辅音类：Liquid（流音）、Nasal（鼻音）、Fricative（擦音）、Aspirate（送气音）、Semivowel（半元音）、Coda（韵尾）、Stop（塞音）、Affricate（塞擦音）；<br>功能尚未构建完成的次要音素属性专用类：Prenuclear（介母）。</p>
+</blockquote>
+<ol start="4">
+<li>所有字典文件（*.txt）均为以制表符（\t）分割的歌词音素序列，无标题行，推荐于 Microsoft Excel 下编辑导出；</li>
+<li>请将默认启用的字典命名为 Default.txt ，文件名不可修改；</li>
+<li>除默认字典外的其他字典均需满足 文本+识别后缀.txt 的命名规则，推荐文本输入易读的语言名，识别后缀为单个易于输入且不与其他字典冲突的字符。</li>
+</ol>
+<h3 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h3><blockquote>
+<p><a target="_blank" rel="noopener" href="https://github.com/Muzium/muzium.github.io/releases/tag/v1.0.1">GitHub</a><br><a target="_blank" rel="noopener" href="https://gitee.com/muzium/muzium/releases/tag/v1.0.1">Gitee</a></p>
+</blockquote>
 
         
       </div>
