@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮曜 Fuyao - 藏声馆</title>
+    <link rel="shortcut icon" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://cdn-font.hyperos.mi.com/font/css?family=MiSans_VF:VF:Chinese_Simplify,Latin&display=swap">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/character.css">
+</head>
+<body>
+    <!-- Sticky Navigation Bar -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                <img src="/images/Banner-Icons.png" alt="藏声馆" class="logo-img">
+                <span>藏声馆</span>
+            </a>
+            <div class="nav-links">
+                <a href="/#fuyao" class="nav-character" data-color="#FFB600">浮曜</a>
+                <a href="/#fuyi" class="nav-character" data-color="#98453F">浮亦</a>
+                <a href="/#wanzhi" class="nav-character" data-color="#545F8D">宛沚</a>
+                <div class="nav-tools-dropdown">
+                    <a href="#" class="nav-link">其他工具</a>
+                    <div class="tools-menu">
+                        <a href="/tools">工具列表</a>
+                    </div>
+                </div>
+                <a href="/eula" class="nav-link">使用规约</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="character-page">
+        <!-- Character Profile Section -->
+        <section class="profile-section" style="--character-color: #FFB600">
+            <div class="profile-content">
+                <div class="profile-text">
+                    <div class="character-logo">
+                        <h1>浮曜</h1>
+                        <p class="name-variants">Fuyao / 浮曜</p>
+                    </div>
+                    <div class="character-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">性别</span>
+                            <span class="stat-value">男</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">身高</span>
+                            <span class="stat-value">178cm</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">体重</span>
+                            <span class="stat-value">63kg</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">年龄</span>
+                            <span class="stat-value">20岁</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">生日</span>
+                            <span class="stat-value">05月16日</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">代表色</span>
+                            <span class="stat-value">
+                                <span class="color-swatch" style="background: #FFB600"></span>
+                                #FFB600
+                            </span>
+                        </div>
+                    </div>
+                    <div class="character-description">
+                        <p>多引擎男性虚拟歌手</p>
+                    </div>
+                </div>
+                <div class="profile-illustrations">
+                    <div class="illust-thumbnails">
+                        <button class="thumb-btn active" data-image="/images/Yao-Illust1.png">
+                            <img src="/images/Yao-Illust1.png" alt="浮曜立绘1">
+                        </button>
+                        <button class="thumb-btn" data-image="/images/Yao-Illust2.png">
+                            <img src="/images/Yao-Illust2.png" alt="浮曜立绘2">
+                        </button>
+                        <button class="thumb-btn" data-image="/images/Yao-Illust3.png">
+                            <img src="/images/Yao-Illust3.png" alt="浮曜立绘3">
+                        </button>
+                    </div>
+                    <div class="illust-display">
+                        <img id="current-illust" src="/images/Yao-Illust1.png" alt="浮曜">
+                        <button class="btn-download" onclick="downloadIllust()">下载立绘</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Engine Sections -->
+        <section class="engine-section" style="--character-color: #FFB600">
+            <div class="engine-content">
+                <div class="engine-info">
+                    <h2>UTAU</h2>
+                    <div class="engine-details">
+                        <p><strong>引擎说明：</strong>UTAU是一款免费的歌声合成软件</p>
+                        <p><strong>推荐曲速：</strong>120 BPM</p>
+                        <p><strong>推荐音高：</strong>C4</p>
+                        <p><strong>音色：</strong>标准音色</p>
+                    </div>
+                </div>
+                <div class="engine-voices">
+                    <h3>清唱试听</h3>
+                    <div class="voice-samples">
+                        <p class="no-samples">暂无清唱样本</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="engine-section" style="--character-color: #FFB600">
+            <div class="engine-content">
+                <div class="engine-info">
+                    <h2>DeepVocal</h2>
+                    <div class="engine-details">
+                        <p><strong>引擎说明：</strong>DeepVocal是一款基于深度学习的歌声合成软件</p>
+                        <p><strong>推荐曲速：</strong>100-140 BPM</p>
+                        <p><strong>推荐音高：</strong>C4</p>
+                        <p><strong>音色：</strong>标准音色</p>
+                    </div>
+                </div>
+                <div class="engine-voices">
+                    <h3>清唱试听</h3>
+                    <div class="voice-samples">
+                        <p class="no-samples">暂无清唱样本</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="engine-section" style="--character-color: #FFB600">
+            <div class="engine-content">
+                <div class="engine-info">
+                    <h2>DiffSinger</h2>
+                    <div class="engine-details">
+                        <p><strong>引擎说明：</strong>DiffSinger是一款先进的AI歌声合成引擎</p>
+                        <p><strong>推荐曲速：</strong>80-160 BPM</p>
+                        <p><strong>推荐音高：</strong>C3-C5</p>
+                        <p><strong>音色：</strong>标准音色</p>
+                    </div>
+                </div>
+                <div class="engine-voices">
+                    <h3>清唱试听</h3>
+                    <div class="voice-samples">
+                        <p class="no-samples">暂无清唱样本</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- EULA Modal -->
+    <div id="eula-modal" class="modal">
+        <div class="modal-content">
+            <h2>使用规约</h2>
+            <div class="eula-content">
+                <p>在下载本角色的立绘资源前，请仔细阅读以下使用规约：</p>
+                <ul>
+                    <li>禁止将本资源用于商业用途</li>
+                    <li>禁止二次配布</li>
+                    <li>禁止冒领作者身份</li>
+                    <li>使用时请注明角色名称和来源</li>
+                </ul>
+                <p>详细规约请查看：<a href="/eula" target="_blank">完整使用规约</a></p>
+            </div>
+            <div class="modal-actions">
+                <label>
+                    <input type="checkbox" id="eula-agree">
+                    我已阅读并同意使用规约
+                </label>
+                <div class="modal-buttons">
+                    <button class="btn-cancel" onclick="closeEulaModal()">取消</button>
+                    <button class="btn-confirm" id="confirm-download" disabled>确认下载</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Global Music Player -->
+    <div id="music-player" class="music-player">
+        <div class="player-header">
+            <button id="player-toggle" class="player-toggle">▼</button>
+            <span class="player-title">音乐播放器</span>
+        </div>
+        <div id="player-content" class="player-content">
+            <canvas id="spectrum-canvas" class="spectrum-canvas"></canvas>
+            <div class="player-controls">
+                <button id="play-pause" class="control-btn">▶</button>
+                <input type="range" id="progress-bar" class="progress-bar" min="0" max="100" value="0">
+                <button id="download-track" class="control-btn">⬇</button>
+            </div>
+            <div class="player-info">
+                <div id="track-name" class="track-name">暂无音乐</div>
+                <div id="track-time" class="track-time">0:00 / 0:00</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" style="display: none;">↑</button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>版权归属</h4>
+                <p>© 2025 Muzium. All rights reserved.</p>
+            </div>
+            <div class="footer-section">
+                <h4>字体来源</h4>
+                <p>MiSans - 小米字体</p>
+            </div>
+            <div class="footer-section">
+                <h4>联系方式</h4>
+                <p>
+                    <a href="https://space.bilibili.com/2099148349" target="_blank">哔哩哔哩</a> |
+                    <a href="https://github.com/Muzium" target="_blank">GitHub</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/character.js"></script>
+</body>
+</html>

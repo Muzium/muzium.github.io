@@ -1,0 +1,99 @@
+{
+  "characters": [
+    {
+      "id": "fuyao",
+      "name": "浮曜",
+      "nameEn": "Fuyao",
+      "nameJa": "浮曜",
+      "gender": "男",
+      "height": "178cm",
+      "weight": "63kg",
+      "age": "20",
+      "birthday": "05月16日",
+      "color": "#FFB600",
+      "description": "多引擎男性虚拟歌手",
+      "images": [
+        "/images/Yao-Illust1.png",
+        "/images/Yao-Illust2.png",
+        "/images/Yao-Illust3.png"
+      ],
+      "banner": "/images/Yao-Banner.jpg",
+      "engines": [
+        {
+          "name": "UTAU",
+          "info": "推荐曲速: 120 BPM\n推荐音高: C4",
+          "voices": []
+        },
+        {
+          "name": "DeepVocal",
+          "info": "推荐曲速: 100-140 BPM\n推荐音高: C4",
+          "voices": []
+        },
+        {
+          "name": "DiffSinger",
+          "info": "推荐曲速: 80-160 BPM\n推荐音高: C3-C5",
+          "voices": []
+        }
+      ]
+    },
+    {
+      "id": "fuyi",
+      "name": "浮亦",
+      "nameEn": "Fuyi",
+      "nameJa": "浮亦",
+      "gender": "男",
+      "height": "185cm",
+      "age": "24",
+      "birthday": "02月06日",
+      "color": "#98453F",
+      "description": "多引擎男性虚拟歌手",
+      "images": [
+        "/images/Fuyi-Illust1.png",
+        "/images/Fuyi-Illust2.png",
+        "/images/Fuyi-Illust3.png"
+      ],
+      "banner": "/images/Fuyi-Banner.jpg",
+      "engines": [
+        {
+          "name": "UTAU",
+          "info": "推荐曲速: 120 BPM\n推荐音高: C3",
+          "voices": []
+        },
+        {
+          "name": "VocalSharp",
+          "info": "推荐曲速: 100-140 BPM\n推荐音高: C3",
+          "voices": []
+        }
+      ]
+    },
+    {
+      "id": "wanzhi",
+      "name": "宛沚",
+      "nameEn": "Wanzhi",
+      "nameJa": "宛沚",
+      "gender": "女",
+      "height": "164cm",
+      "birthday": "10月22日",
+      "color": "#545F8D",
+      "colorSecondary": "#88ADA6",
+      "description": "多引擎女性虚拟歌手",
+      "images": [
+        "/images/Wanzhi-Illust1.png"
+      ],
+      "banner": "/images/Wanzhi-Banner.jpg",
+      "background": "/images/Wanzhi-Background.png",
+      "engines": [
+        {
+          "name": "ACE Studio",
+          "info": "推荐曲速: 80-160 BPM\n推荐音高: C4-C6",
+          "voices": []
+        },
+        {
+          "name": "歌叽歌叽",
+          "info": "推荐曲速: 100-140 BPM\n推荐音高: C4",
+          "voices": []
+        }
+      ]
+    }
+  ]
+}
