@@ -388,6 +388,10 @@ body {
     z-index: 998;
 }
 
+.back-to-top.hidden {
+    display: none;
+}
+
 .back-to-top:hover {
     transform: translateY(-4px);
 }

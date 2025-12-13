@@ -138,14 +138,14 @@ function drawPixelatedWaveform(canvas) {
 
 // Play voice sample
 function playVoiceSample(button, audioUrl) {
-    // This would connect to the global audio player
-    // For now, just show a placeholder
-    console.log('Playing voice sample:', audioUrl);
-    
-    // You could integrate with the main player like this:
-    // if (typeof loadTrack === 'function') {
-    //     loadTrack(audioUrl, 'Voice Sample');
-    // }
+    // Connect to the global audio player
+    if (typeof loadTrack === 'function' && audioUrl) {
+        const sampleName = button.closest('.voice-sample')?.querySelector('.voice-name')?.textContent || 'Voice Sample';
+        loadTrack(audioUrl, sampleName);
+        playAudio();
+    } else {
+        console.warn('Audio player not available or no audio URL provided');
+    }
 }
 
 // Resize waveforms on window resize

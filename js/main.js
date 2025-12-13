@@ -234,9 +234,9 @@ function initBackToTop() {
     
     window.addEventListener('scroll', function() {
         if (window.pageYOffset > 300) {
-            backToTopBtn.style.display = 'block';
+            backToTopBtn.classList.remove('hidden');
         } else {
-            backToTopBtn.style.display = 'none';
+            backToTopBtn.classList.add('hidden');
         }
     });
     
@@ -248,15 +248,5 @@ function initBackToTop() {
     });
 }
 
-// Character section hover effects
-document.addEventListener('DOMContentLoaded', function() {
-    const sections = document.querySelectorAll('.character-section');
-    
-    sections.forEach(section => {
-        const color = section.getAttribute('data-color');
-        
-        section.addEventListener('mouseenter', function() {
-            this.style.setProperty('--section-accent', color);
-        });
-    });
-});
+// Character section hover effects are handled by CSS
+// Additional character page initialization can be added here if needed
