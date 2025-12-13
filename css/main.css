@@ -19,6 +19,7 @@ body {
     color: var(--text-color);
     overflow-x: hidden;
     line-height: 1.6;
+    scroll-behavior: smooth;
 }
 
 /* Sticky Navigation Bar */
@@ -81,12 +82,22 @@ body {
     transform: translateX(-50%);
     width: 0;
     height: 3px;
-    background: var(--primary-color);
-    transition: width 0.3s ease;
+    transition: width 0.3s ease, background-color 0.3s ease;
 }
 
-.nav-character:hover::after {
+.nav-character[data-color="#FFB600"]:hover::after {
     width: 80%;
+    background: #FFB600;
+}
+
+.nav-character[data-color="#98453F"]:hover::after {
+    width: 80%;
+    background: #98453F;
+}
+
+.nav-character[data-color="#545F8D"]:hover::after {
+    width: 80%;
+    background: #545F8D;
 }
 
 .nav-tools-dropdown {

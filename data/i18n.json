@@ -1,0 +1,74 @@
+{
+  "zh-CN": {
+    "nav": {
+      "home": "主页",
+      "eula": "使用规约",
+      "tools": "其他工具"
+    },
+    "home": {
+      "title": "藏声馆"
+    },
+    "characters": {
+      "fuyao": {
+        "name": "浮曜",
+        "nameEn": "Fuyao",
+        "description": "多引擎男性虚拟歌手"
+      },
+      "fuyi": {
+        "name": "浮亦",
+        "nameEn": "Fuyi",
+        "description": "多引擎男性虚拟歌手"
+      },
+      "wanzhi": {
+        "name": "宛沚",
+        "nameEn": "Wanzhi",
+        "description": "多引擎女性虚拟歌手"
+      }
+    },
+    "player": {
+      "title": "音乐播放器",
+      "noMusic": "暂无音乐"
+    },
+    "footer": {
+      "copyright": "版权归属",
+      "font": "字体来源",
+      "contact": "联系方式"
+    }
+  },
+  "en": {
+    "nav": {
+      "home": "Home",
+      "eula": "EULA",
+      "tools": "Tools"
+    },
+    "home": {
+      "title": "Muzium"
+    },
+    "characters": {
+      "fuyao": {
+        "name": "Fuyao",
+        "nameEn": "Fuyao",
+        "description": "Multi-engine Male Virtual Singer"
+      },
+      "fuyi": {
+        "name": "Fuyi",
+        "nameEn": "Fuyi",
+        "description": "Multi-engine Male Virtual Singer"
+      },
+      "wanzhi": {
+        "name": "Wanzhi",
+        "nameEn": "Wanzhi",
+        "description": "Multi-engine Female Virtual Singer"
+      }
+    },
+    "player": {
+      "title": "Music Player",
+      "noMusic": "No Music"
+    },
+    "footer": {
+      "copyright": "Copyright",
+      "font": "Font Source",
+      "contact": "Contact"
+    }
+  }
+}

@@ -15,21 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Navigation functionality
 function initNavigation() {
-    const navCharacters = document.querySelectorAll('.nav-character');
-    
-    navCharacters.forEach(link => {
-        const color = link.getAttribute('data-color');
-        
-        link.addEventListener('mouseenter', function() {
-            this.style.setProperty('--primary-color', color);
-            this.querySelector('::after')?.style?.setProperty('background', color);
-        });
-        
-        link.addEventListener('mouseleave', function() {
-            this.style.removeProperty('--primary-color');
-        });
-    });
-    
     // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
