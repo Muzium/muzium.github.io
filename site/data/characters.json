@@ -1,0 +1,2256 @@
+[
+ {
+  "slug": "Fuyi",
+  "name": "浮亦",
+  "tagline": "「如果」的对立面。",
+  "subtitle": "多引擎男性青年虚拟歌手",
+  "profile": {
+   "性别": "男",
+   "身高": "185cm",
+   "年龄": "24岁",
+   "生日": "02月06日"
+  },
+  "colors": {
+   "primary": "#98453F"
+  },
+  "illusts": [
+   {
+    "title": "立绘1",
+    "design": "99円",
+    "paint": "99円",
+    "icon": "/assets/icon/Fuyi_Icon_01.png",
+    "illust": "/assets/illust/Fuyi_Illust_01.png"
+   },
+   {
+    "title": "立绘2",
+    "design": "99円",
+    "paint": "CruxLake",
+    "icon": "/assets/icon/Fuyi_Icon_02.png",
+    "illust": "/assets/illust/Fuyi_Illust_02.png"
+   },
+   {
+    "title": "立绘3",
+    "design": "海纳不是法号",
+    "paint": "海纳不是法号",
+    "icon": "/assets/icon/Fuyi_Icon_03.png",
+    "illust": "/assets/illust/Fuyi_Illust_03.png"
+   },
+   {
+    "title": "立绘4",
+    "design": "一笼蒸虾饺",
+    "paint": "一笼蒸虾饺",
+    "icon": "/assets/icon/Fuyi_Icon_04.png",
+    "illust": "/assets/illust/Fuyi_Illust_04.png"
+   },
+   {
+    "title": "立绘5",
+    "design": "XUNZ-",
+    "paint": "XUNZ-",
+    "icon": "/assets/icon/Fuyi_Icon_05.png",
+    "illust": "/assets/illust/Fuyi_Illust_05.png"
+   }
+  ],
+  "voicebanks": [
+   {
+    "title": "浮亦 for DiffSinger",
+    "engine": "DiffSinger",
+    "engineSite": "https://github.com/openvpi/DiffSinger",
+    "engineIntro": "DiffSinger 是由 [刘静林（MoonInTheRiver）](https://github.com/MoonInTheRiver) 开创性推出， [YQ之神@OpenVPI团队](https://space.bilibili.com/102844209) 接续开发维护的次世代开源AI歌声合成引擎，具有高度可定制化、更新迅速等特点。DiffSinger 具有高创造力且完备的开源社区，请访问哔哩哔哩 [DiffSinger开源社区](https://space.bilibili.com/3546580430883685) 或 QQ 交流群：907879266。",
+    "notices": [
+     "2024年08月08日0点后，「浮亦」歌声数据库将暂时关闭声库申请通道并下架，未经许可使用与传播「浮亦」歌声数据库将不被允许。",
+     "在此希望已经获得歌声数据集副本的用户停止使用该角色所属歌声数据库进行创作，不要将其传播给其他人。",
+     "如有违背管理者个人意愿的稿件，我方可能会提出交涉下架相关视频/音频。"
+    ],
+    "timbreNames": [
+     "Natural"
+    ],
+    "languages": [
+     {
+      "label": "汉语普通话",
+      "code": "zh"
+     },
+     {
+      "label": "日语",
+      "code": "ja"
+     },
+     {
+      "label": "英语",
+      "code": "en"
+     },
+     {
+      "label": "朝鲜语",
+      "code": "ko"
+     },
+     {
+      "label": "汉语广东话",
+      "code": "zh-yue"
+     },
+     {
+      "label": "汉语湖南话",
+      "code": "zh-hsn"
+     },
+     {
+      "label": "汉语闽南话",
+      "code": "zh-nan"
+     }
+    ],
+    "version": "Retake ver.002",
+    "timbres": [
+     {
+      "name": "Natural",
+      "intro": "以最自然的发声状态录制的声库",
+      "range": "F2 ~ F4",
+      "tempo": "70 ~ 140 BPM"
+     }
+    ],
+    "samples": [
+     {
+      "label": "Natural音色Ⅰ",
+      "timbre": "Natural",
+      "url": "/assets/sample/Fuyi_DiffSinger_Natural_01.mp3"
+     },
+     {
+      "label": "Natural音色Ⅱ",
+      "timbre": "Natural",
+      "url": "/assets/sample/Fuyi_DiffSinger_Natural_02.mp3"
+     }
+    ],
+    "credits": [
+     {
+      "label": "角色配音",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "原音标定",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "声库制作",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "声库下载",
+      "value": "已下架"
+     }
+    ],
+    "links": [
+     {
+      "label": "编辑器下载",
+      "items": [
+       {
+        "text": "Tunelab v2.0",
+        "url": "https://github.com/LiuYunPlayer/TuneLab"
+       }
+      ]
+     }
+    ],
+    "redirect": "",
+    "engineIntroLinks": [
+     {
+      "text": "刘静林（MoonInTheRiver）",
+      "url": "https://github.com/MoonInTheRiver"
+     },
+     {
+      "text": "YQ之神@OpenVPI团队",
+      "url": "https://space.bilibili.com/102844209"
+     },
+     {
+      "text": "DiffSinger开源社区",
+      "url": "https://space.bilibili.com/3546580430883685"
+     }
+    ]
+   },
+   {
+    "title": "浮亦 for ACE Studio",
+    "engine": "ACE Studio",
+    "engineSite": "https://ace-studio.timedomain.cn/",
+    "engineIntro": "ACE Studio 是由北京时域科技有限公司自主研发的次世代 AI 歌声合成引擎，支持汉语普通话、日语与英语等多种语言的高性能合成，现已面向个人非企业单位用户提供歌声数据库定制服务。根据不同的付费会员档位，用户可以获取声线调整、干声转换等进阶功能。",
+    "notices": [
+     "2024年08月08日0点后，「浮亦」歌声数据库将暂时关闭声库申请通道并下架，未经许可使用与传播「浮亦」歌声数据库将不被允许。",
+     "在此希望已经获得歌声数据集副本的用户停止使用该角色所属歌声数据库进行创作，不要将其传播给其他人。",
+     "如有违背管理者个人意愿的稿件，我方可能会提出交涉下架相关视频/音频。"
+    ],
+    "timbreNames": [
+     "Natural",
+     "Whisper",
+     "Mature",
+     "Light",
+     "Power"
+    ],
+    "languages": [
+     {
+      "label": "汉语普通话",
+      "code": "zh"
+     },
+     {
+      "label": "日语",
+      "code": "ja"
+     },
+     {
+      "label": "英语",
+      "code": "en"
+     },
+     {
+      "label": "西班牙语",
+      "code": "es"
+     }
+    ],
+    "version": "Solo24",
+    "timbres": [
+     {
+      "name": "Natural",
+      "intro": "以最自然的发声状态录制的声库",
+      "range": "D2 ~ B4",
+      "tempo": "60 ~ 170 BPM"
+     },
+     {
+      "name": "Whisper",
+      "intro": "以耳语般轻柔的发声状态录制的声库",
+      "range": "F2 ~ G4",
+      "tempo": "60 ~ 160 BPM"
+     },
+     {
+      "name": "Mature",
+      "intro": "模仿年长者的发声状态录制的声库",
+      "range": "F2 ~ B4",
+      "tempo": "70 ~ 160 BPM"
+     },
+     {
+      "name": "Light",
+      "intro": "以清亮的音色维持流行唱法的发声状态录制的声库",
+      "range": "F2 ~ G4",
+      "tempo": "70 ~ 160 BPM"
+     },
+     {
+      "name": "Power",
+      "intro": "以强劲有力的发声状态录制的声库（从多次收录中筛选出）",
+      "range": "D2 ~ B4",
+      "tempo": "60 ~ 170 BPM"
+     }
+    ],
+    "samples": [
+     {
+      "label": "Natural音色Ⅰ",
+      "timbre": "Natural",
+      "url": "/assets/sample/Fuyi_ACE_Studio_Natural_01.mp3"
+     },
+     {
+      "label": "Natural音色Ⅱ",
+      "timbre": "Natural",
+      "url": "/assets/sample/Fuyi_ACE_Studio_Natural_02.mp3"
+     },
+     {
+      "label": "Whisper音色Ⅰ",
+      "timbre": "Whisper",
+      "url": "/assets/sample/Fuyi_ACE_Studio_Whisper_01.mp3"
+     },
+     {
+      "label": "Mature音色Ⅰ",
+      "timbre": "Mature",
+      "url": "/assets/sample/Fuyi_ACE_Studio_Mature_01.mp3"
+     },
+     {
+      "label": "Light音色Ⅰ",
+      "timbre": "Light",
+      "url": "/assets/sample/Fuyi_ACE_Studio_Light_01.mp3"
+     },
+     {
+      "label": "Power音色Ⅰ",
+      "timbre": "Power",
+      "url": "/assets/sample/Fuyi_ACE_Studio_Power_01.mp3"
+     }
+    ],
+    "credits": [
+     {
+      "label": "角色配音",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "原音标定",
+      "value": "北京时域科技有限公司（自动推定）"
+     },
+     {
+      "label": "声库制作",
+      "value": "北京时域科技有限公司"
+     },
+     {
+      "label": "声库申请",
+      "value": "已关闭申请通道"
+     }
+    ],
+    "links": [
+     {
+      "label": "编辑器下载",
+      "items": [
+       {
+        "text": "ACE Studio 官方网站",
+        "url": "https://ace-studio.timedomain.cn/"
+       }
+      ]
+     }
+    ],
+    "redirect": "",
+    "engineIntroLinks": []
+   },
+   {
+    "title": "浮亦 for 歌叽歌叽",
+    "engine": "歌叽歌叽",
+    "engineSite": "https://gejigejikugou.com/index.html",
+    "engineIntro": "歌叽歌叽是由腾讯音乐集团广州酷狗计算机科技有限公司推出的AI歌声合成引擎，现已停止维护。",
+    "notices": [],
+    "timbreNames": [
+     "Natural"
+    ],
+    "languages": [
+     {
+      "label": "汉语普通话",
+      "code": "zh"
+     }
+    ],
+    "version": "2022",
+    "timbres": [
+     {
+      "name": "Natural",
+      "intro": "以最自然的发声状态录制的声库",
+      "range": "G2 ~ E4",
+      "tempo": "60 ~ 150 BPM"
+     }
+    ],
+    "samples": [
+     {
+      "label": "Natural音色Ⅰ",
+      "timbre": "Natural",
+      "url": "/assets/sample/Fuyi_GJGJ_Natural_01.mp3"
+     },
+     {
+      "label": "Natural音色Ⅱ",
+      "timbre": "Natural",
+      "url": "/assets/sample/Fuyi_GJGJ_Natural_02.mp3"
+     }
+    ],
+    "credits": [
+     {
+      "label": "角色配音",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "原音标定",
+      "value": "广州酷狗计算机科技有限公司（自动推定）"
+     },
+     {
+      "label": "声库制作",
+      "value": "广州酷狗计算机科技有限公司"
+     },
+     {
+      "label": "声库下载",
+      "value": "无法提供"
+     }
+    ],
+    "links": [
+     {
+      "label": "编辑器下载",
+      "items": [
+       {
+        "text": "歌叽歌叽官方网站",
+        "url": "https://gejigejikugou.com/index.html"
+       }
+      ]
+     }
+    ],
+    "redirect": "",
+    "engineIntroLinks": []
+   },
+   {
+    "title": "浮亦 for Unknown",
+    "engine": "Unknown",
+    "engineSite": "404 Not Found",
+    "engineIntro": "404 Not Found",
+    "notices": [
+     "2024年08月08日0点后，「浮亦」歌声数据库将暂时关闭声库申请通道并下架，未经许可使用与传播「浮亦」歌声数据库将不被允许。",
+     "在此希望已经获得歌声数据集副本的用户停止使用该角色所属歌声数据库进行创作，不要将其传播给其他人。",
+     "如有违背管理者个人意愿的稿件，我方可能会提出交涉下架相关视频/音频。"
+    ],
+    "timbreNames": [
+     "Natural"
+    ],
+    "languages": [
+     {
+      "label": "汉语普通话",
+      "code": "zh"
+     },
+     {
+      "label": "日语",
+      "code": "ja"
+     }
+    ],
+    "version": "v4",
+    "timbres": [
+     {
+      "name": "Natural",
+      "intro": "以最自然的发声状态录制的声库",
+      "range": "D2 ~ B4",
+      "tempo": "60 ~ 160 BPM"
+     }
+    ],
+    "samples": [
+     {
+      "label": "Natural音色Ⅰ",
+      "timbre": "Natural",
+      "url": "/assets/sample/Fuyi_Unknown_Natural_01.mp3"
+     },
+     {
+      "label": "Natural音色Ⅱ",
+      "timbre": "Natural",
+      "url": "/assets/sample/Fuyi_Unknown_Natural_02.mp3"
+     }
+    ],
+    "credits": [
+     {
+      "label": "角色配音",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "原音标定",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "声库制作",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "声库下载",
+      "value": "404 Not Found"
+     },
+     {
+      "label": "编辑器下载",
+      "value": "404 Not Found"
+     }
+    ],
+    "links": [],
+    "redirect": "",
+    "engineIntroLinks": []
+   }
+  ],
+  "album": "/assets/album/Fuyi-Album.png"
+ },
+ {
+  "slug": "Fuyao",
+  "name": "浮曜",
+  "tagline": "朝日映江涛。",
+  "subtitle": "多引擎男性青年虚拟歌手",
+  "profile": {
+   "性别": "男",
+   "身高": "178cm",
+   "年龄": "20岁",
+   "生日": "05月16日"
+  },
+  "colors": {
+   "primary": "#FFB600",
+   "secondary": "#D0D7E5"
+  },
+  "illusts": [
+   {
+    "title": "立绘1",
+    "design": "海纳不是法号",
+    "paint": "海纳不是法号",
+    "icon": "/assets/icon/Fuyao_Icon_01.png",
+    "illust": "/assets/illust/Fuyao_Illust_01.png"
+   },
+   {
+    "title": "立绘2",
+    "design": "海纳不是法号",
+    "paint": "川夭",
+    "icon": "/assets/icon/Fuyao_Icon_02.png",
+    "illust": "/assets/illust/Fuyao_Illust_02.png"
+   },
+   {
+    "title": "立绘3",
+    "design": "海纳不是法号",
+    "paint": "海纳不是法号",
+    "icon": "/assets/icon/Fuyao_Icon_03.png",
+    "illust": "/assets/illust/Fuyao_Illust_03.png"
+   },
+   {
+    "title": "立绘4",
+    "design": "一笼蒸虾饺",
+    "paint": "一笼蒸虾饺",
+    "icon": "/assets/icon/Fuyao_Icon_04.png",
+    "illust": "/assets/illust/Fuyao_Illust_04.png"
+   },
+   {
+    "title": "立绘5",
+    "design": "XUNZ-",
+    "paint": "XUNZ-",
+    "icon": "/assets/icon/Fuyao_Icon_05.png",
+    "illust": "/assets/illust/Fuyao_Illust_05.png"
+   }
+  ],
+  "voicebanks": [
+   {
+    "title": "浮曜 for UTAU",
+    "engine": "UTAU",
+    "engineSite": "http://utau.us/",
+    "engineIntro": "UTAU是由饴屋P开发的老牌免费拼接式歌声合成引擎，可以替换重采样引擎与高度定制化，可以支持各种社区开发的辅助工具与语言。",
+    "notices": [
+     "2024年08月08日0点后，「浮曜」歌声数据库将暂时关闭声库申请通道并下架，未经许可使用与传播「浮曜」歌声数据库将不被允许。",
+     "在此希望已经获得歌声数据集副本的用户停止使用该角色所属歌声数据库进行创作，不要将其传播给其他人。",
+     "如有违背管理者个人意愿的稿件，我方可能会提出交涉下架相关视频/音频。"
+    ],
+    "timbreNames": [
+     "Original",
+     "Natural",
+     "Tight"
+    ],
+    "languages": [
+     {
+      "label": "汉语普通话",
+      "code": "zh"
+     },
+     {
+      "label": "日语",
+      "code": "ja"
+     }
+    ],
+    "version": "2020",
+    "timbres": [
+     {
+      "name": "Original",
+      "intro": "以大声朗读的发声状态录制的声库",
+      "range": "E2 ~ D4",
+      "tempo": "60 ~ 140 BPM"
+     },
+     {
+      "name": "Natural",
+      "intro": "以最自然的发声状态录制的声库",
+      "range": "E2 ~ E4",
+      "tempo": "70 ~ 150 BPM"
+     },
+     {
+      "name": "Tight",
+      "intro": "以发声系统保持高度紧张的发声状态录制的声库",
+      "range": "A2 ~ E4",
+      "tempo": "70 ~ 140 BPM"
+     }
+    ],
+    "samples": [
+     {
+      "label": "Original音色Ⅰ",
+      "timbre": "Original",
+      "url": "/assets/sample/Fuyao_UTAU_Original_01.mp3"
+     },
+     {
+      "label": "Original音色Ⅱ",
+      "timbre": "Original",
+      "url": "/assets/sample/Fuyao_UTAU_Original_02.mp3"
+     },
+     {
+      "label": "Natural音色Ⅰ",
+      "timbre": "Natural",
+      "url": "/assets/sample/Fuyao_UTAU_Natural_01.mp3"
+     },
+     {
+      "label": "Tight音色Ⅰ",
+      "timbre": "Tight",
+      "url": "/assets/sample/Fuyao_UTAU_Tight_01.mp3"
+     }
+    ],
+    "credits": [
+     {
+      "label": "角色配音",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "原音标定",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "声库制作",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "声库下载",
+      "value": "已下架"
+     }
+    ],
+    "links": [
+     {
+      "label": "编辑器下载",
+      "items": [
+       {
+        "text": "OpenUTAU 官方网站",
+        "url": "https://www.openutau.com/"
+       }
+      ]
+     }
+    ],
+    "redirect": "",
+    "engineIntroLinks": []
+   },
+   {
+    "title": "浮曜 for DeepVocal",
+    "engine": "DeepVocal",
+    "engineSite": "https://www.deep-vocal.com/#/",
+    "engineIntro": "DeepVocal是由 [BoxStar](https://space.bilibili.com/7644915) 自主研发的拼接式歌声合成引擎，具有操作便捷、音素系统高度可定制化等特点。",
+    "notices": [
+     "2024年08月08日0点后，「浮曜」歌声数据库将暂时关闭声库申请通道并下架，未经许可使用与传播「浮曜」歌声数据库将不被允许。",
+     "在此希望已经获得歌声数据集副本的用户停止使用该角色所属歌声数据库进行创作，不要将其传播给其他人。",
+     "如有违背管理者个人意愿的稿件，我方可能会提出交涉下架相关视频/音频。"
+    ],
+    "timbreNames": [
+     "Original",
+     "Natural",
+     "Tight"
+    ],
+    "languages": [
+     {
+      "label": "汉语普通话",
+      "code": "zh"
+     },
+     {
+      "label": "日语",
+      "code": "ja"
+     }
+    ],
+    "version": "2020",
+    "timbres": [
+     {
+      "name": "Original",
+      "intro": "以大声朗读的发声状态录制的声库",
+      "range": "E2 ~ D4",
+      "tempo": "60 ~ 150 BPM"
+     },
+     {
+      "name": "Natural",
+      "intro": "以最自然的发声状态录制的声库",
+      "range": "E2 ~ F4",
+      "tempo": "70 ~ 160 BPM"
+     },
+     {
+      "name": "Tight",
+      "intro": "以发声系统保持高度紧张的发声状态录制的声库",
+      "range": "A2 ~ E4",
+      "tempo": "70 ~ 150 BPM"
+     }
+    ],
+    "samples": [
+     {
+      "label": "Original音色Ⅰ",
+      "timbre": "Original",
+      "url": "/assets/sample/Fuyao_DeepVocal_Original_01.mp3"
+     },
+     {
+      "label": "Original音色Ⅱ",
+      "timbre": "Original",
+      "url": "/assets/sample/Fuyao_DeepVocal_Original_02.mp3"
+     },
+     {
+      "label": "Natural音色Ⅰ",
+      "timbre": "Natural",
+      "url": "/assets/sample/Fuyao_DeepVocal_Natural_01.mp3"
+     },
+     {
+      "label": "Natural音色Ⅱ",
+      "timbre": "Natural",
+      "url": "/assets/sample/Fuyao_DeepVocal_Natural_02.mp3"
+     },
+     {
+      "label": "Tight音色Ⅰ",
+      "timbre": "Tight",
+      "url": "/assets/sample/Fuyao_DeepVocal_Tight_01.mp3"
+     }
+    ],
+    "credits": [
+     {
+      "label": "角色配音",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "原音标定",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "声库制作",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "声库下载",
+      "value": "已下架"
+     }
+    ],
+    "links": [
+     {
+      "label": "编辑器下载",
+      "items": [
+       {
+        "text": "DeepVocal 官方网站",
+        "url": "https://www.deep-vocal.com/#/"
+       }
+      ]
+     }
+    ],
+    "redirect": "",
+    "engineIntroLinks": [
+     {
+      "text": "BoxStar",
+      "url": "https://space.bilibili.com/7644915"
+     }
+    ]
+   },
+   {
+    "title": "浮曜 for NNSVS",
+    "engine": "NNSVS",
+    "engineSite": "https://nnsvs.github.io/",
+    "engineIntro": "NNSVS是由 [Ryuichi Yamamoto](https://r9y9.github.io/) 自主开发的开源AI歌声合成引擎，主要在日语世界的自制歌声合成界流行，可以使用外部工具辅助进行调声。",
+    "notices": [
+     "2024年08月08日0点后，「浮曜」歌声数据库将暂时关闭声库申请通道并下架，未经许可使用与传播「浮曜」歌声数据库将不被允许。",
+     "在此希望已经获得歌声数据集副本的用户停止使用该角色所属歌声数据库进行创作，不要将其传播给其他人。",
+     "如有违背管理者个人意愿的稿件，我方可能会提出交涉下架相关视频/音频。"
+    ],
+    "timbreNames": [
+     "Natural"
+    ],
+    "languages": [
+     {
+      "label": "日语",
+      "code": "ja"
+     }
+    ],
+    "version": "2020",
+    "timbres": [
+     {
+      "name": "Natural",
+      "intro": "以最自然的发声状态录制的声库",
+      "range": "B2 ~ E4",
+      "tempo": "70 ~ 140 BPM"
+     }
+    ],
+    "samples": [
+     {
+      "label": "Natural音色Ⅰ",
+      "timbre": "Natural",
+      "url": "/assets/sample/Fuyao_NNSVS_Natural_01.mp3"
+     }
+    ],
+    "credits": [
+     {
+      "label": "角色配音",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "原音标定",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "声库制作",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "声库下载",
+      "value": "已下架"
+     }
+    ],
+    "links": [
+     {
+      "label": "编辑器下载",
+      "items": [
+       {
+        "text": "ENUNU for OpenUTAU",
+        "url": "https://github.com/stakira/ENUNU/releases/tag/v0.4.0-openutau"
+       }
+      ]
+     }
+    ],
+    "redirect": "",
+    "engineIntroLinks": [
+     {
+      "text": "Ryuichi Yamamoto",
+      "url": "https://r9y9.github.io/"
+     }
+    ]
+   },
+   {
+    "title": "浮曜 for VocalSharp",
+    "engine": "VocalSharp",
+    "engineSite": "https://www.vocalsharp.net/",
+    "engineIntro": "VocalSharp是由 [金刚小刘](https://space.bilibili.com/24331207) 自主研发的拼接式歌声合成引擎，具有调整空间大、音素系统高度可定制化等特点。",
+    "notices": [
+     "2024年08月08日0点后，「浮曜」歌声数据库将暂时关闭声库申请通道并下架，未经许可使用与传播「浮曜」歌声数据库将不被允许。",
+     "在此希望已经获得歌声数据集副本的用户停止使用该角色所属歌声数据库进行创作，不要将其传播给其他人。",
+     "如有违背管理者个人意愿的稿件，我方可能会提出交涉下架相关视频/音频。"
+    ],
+    "timbreNames": [
+     "Natural"
+    ],
+    "languages": [
+     {
+      "label": "日语",
+      "code": "ja"
+     }
+    ],
+    "version": "2021",
+    "timbres": [
+     {
+      "name": "Natural",
+      "intro": "以最自然的发声状态录制的声库",
+      "range": "B2 ~ E4",
+      "tempo": "70 ~ 140 BPM"
+     }
+    ],
+    "samples": [
+     {
+      "label": "Natural音色Ⅰ",
+      "timbre": "Natural",
+      "url": "/assets/sample/Fuyao_VocalSharp_Natural_01.mp3"
+     }
+    ],
+    "credits": [
+     {
+      "label": "角色配音",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "原音标定",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "声库制作",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "声库下载",
+      "value": "已下架"
+     }
+    ],
+    "links": [
+     {
+      "label": "编辑器下载",
+      "items": [
+       {
+        "text": "VocalSharp 官方网站",
+        "url": "https://www.vocalsharp.net/"
+       }
+      ]
+     }
+    ],
+    "redirect": "",
+    "engineIntroLinks": [
+     {
+      "text": "金刚小刘",
+      "url": "https://space.bilibili.com/24331207"
+     }
+    ]
+   },
+   {
+    "title": "浮曜 for 歌叽歌叽",
+    "engine": "歌叽歌叽",
+    "engineSite": "",
+    "engineIntro": "",
+    "notices": [
+     "因成品音色与浮曜存在出入，2025年12月15日0点后，「浮曜」歌叽歌叽声库将划归「浮亦」名下。"
+    ],
+    "timbreNames": [],
+    "languages": [],
+    "version": "",
+    "timbres": [],
+    "samples": [],
+    "credits": [],
+    "links": [],
+    "redirect": "浮亦 for 歌叽歌叽"
+   },
+   {
+    "title": "浮曜 for DiffSinger",
+    "engine": "DiffSinger",
+    "engineSite": "https://github.com/openvpi/DiffSinger",
+    "engineIntro": "DiffSinger 是由 [刘静林（MoonInTheRiver）](https://github.com/MoonInTheRiver) 开创性推出， [YQ之神@OpenVPI团队](https://space.bilibili.com/102844209) 接续开发维护的次世代开源AI歌声合成引擎，具有高度可定制化、更新迅速等特点。DiffSinger 具有高创造力且完备的开源社区，请访问哔哩哔哩 [DiffSinger开源社区](https://space.bilibili.com/3546580430883685) 或 QQ 交流群：907879266。",
+    "notices": [
+     "2024年08月08日0点后，「浮曜」歌声数据库将暂时关闭声库申请通道并下架，未经许可使用与传播「浮曜」歌声数据库将不被允许。",
+     "在此希望已经获得歌声数据集副本的用户停止使用该角色所属歌声数据库进行创作，不要将其传播给其他人。",
+     "如有违背管理者个人意愿的稿件，我方可能会提出交涉下架相关视频/音频。"
+    ],
+    "timbreNames": [
+     "Natural"
+    ],
+    "languages": [
+     {
+      "label": "汉语普通话",
+      "code": "zh"
+     },
+     {
+      "label": "日语",
+      "code": "ja"
+     },
+     {
+      "label": "英语",
+      "code": "en"
+     },
+     {
+      "label": "朝鲜语",
+      "code": "ko"
+     },
+     {
+      "label": "汉语广东话",
+      "code": "zh-yue"
+     },
+     {
+      "label": "汉语湖南话",
+      "code": "zh-hsn"
+     },
+     {
+      "label": "汉语闽南话",
+      "code": "zh-nan"
+     }
+    ],
+    "version": "Retake ver.002",
+    "timbres": [
+     {
+      "name": "Natural",
+      "intro": "以最自然的发声状态录制的声库",
+      "range": "F2 ~ F4",
+      "tempo": "70 ~ 140 BPM"
+     }
+    ],
+    "samples": [
+     {
+      "label": "Natural音色Ⅰ",
+      "timbre": "Natural",
+      "url": "/assets/sample/Fuyao_DiffSinger_Natural_01.mp3"
+     }
+    ],
+    "credits": [
+     {
+      "label": "角色配音",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "原音标定",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "声库制作",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "声库下载",
+      "value": "已下架"
+     }
+    ],
+    "links": [
+     {
+      "label": "编辑器下载",
+      "items": [
+       {
+        "text": "Tunelab v2.0",
+        "url": "https://github.com/LiuYunPlayer/TuneLab"
+       }
+      ]
+     }
+    ],
+    "redirect": "",
+    "engineIntroLinks": [
+     {
+      "text": "刘静林（MoonInTheRiver）",
+      "url": "https://github.com/MoonInTheRiver"
+     },
+     {
+      "text": "YQ之神@OpenVPI团队",
+      "url": "https://space.bilibili.com/102844209"
+     },
+     {
+      "text": "DiffSinger开源社区",
+      "url": "https://space.bilibili.com/3546580430883685"
+     }
+    ]
+   },
+   {
+    "title": "浮曜 for ACE Studio",
+    "engine": "ACE Studio",
+    "engineSite": "https://ace-studio.timedomain.cn/",
+    "engineIntro": "ACE Studio 是由北京时域科技有限公司自主研发的次世代 AI 歌声合成引擎，支持汉语普通话、日语与英语等多种语言的高性能合成，现已面向个人非企业单位用户提供歌声数据库定制服务。根据不同的付费会员档位，用户可以获取声线调整、干声转换等进阶功能。",
+    "notices": [
+     "2024年08月08日0点后，「浮曜」歌声数据库将暂时关闭声库申请通道并下架，未经许可使用与传播「浮曜」歌声数据库将不被允许。",
+     "在此希望已经获得歌声数据集副本的用户停止使用该角色所属歌声数据库进行创作，不要将其传播给其他人。",
+     "如有违背管理者个人意愿的稿件，我方可能会提出交涉下架相关视频/音频。"
+    ],
+    "timbreNames": [
+     "Natural"
+    ],
+    "languages": [
+     {
+      "label": "汉语普通话",
+      "code": "zh"
+     },
+     {
+      "label": "日语",
+      "code": "ja"
+     },
+     {
+      "label": "英语",
+      "code": "en"
+     },
+     {
+      "label": "西班牙语",
+      "code": "es"
+     }
+    ],
+    "version": "Solo24",
+    "timbres": [
+     {
+      "name": "Natural",
+      "intro": "以最自然的发声状态录制的声库",
+      "range": "D2 ~ B4",
+      "tempo": "60 ~ 170 BPM"
+     }
+    ],
+    "samples": [
+     {
+      "label": "Natural音色Ⅰ",
+      "timbre": "Natural",
+      "url": "/assets/sample/Fuyao_ACE_Studio_Natural_01.mp3"
+     },
+     {
+      "label": "Natural音色Ⅱ",
+      "timbre": "Natural",
+      "url": "/assets/sample/Fuyao_ACE_Studio_Natural_02.mp3"
+     }
+    ],
+    "credits": [
+     {
+      "label": "角色配音",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "原音标定",
+      "value": "北京时域科技有限公司（自动推定）"
+     },
+     {
+      "label": "声库制作",
+      "value": "北京时域科技有限公司"
+     },
+     {
+      "label": "声库申请",
+      "value": "已关闭申请通道"
+     }
+    ],
+    "links": [
+     {
+      "label": "编辑器下载",
+      "items": [
+       {
+        "text": "ACE Studio 官方网站",
+        "url": "https://ace-studio.timedomain.cn/"
+       }
+      ]
+     }
+    ],
+    "redirect": "",
+    "engineIntroLinks": []
+   },
+   {
+    "title": "浮曜 for Unknown",
+    "engine": "Unknown",
+    "engineSite": "404 Not Found",
+    "engineIntro": "404 Not Found",
+    "notices": [
+     "2024年08月08日0点后，「浮曜」歌声数据库将暂时关闭声库申请通道并下架，未经许可使用与传播「浮曜」歌声数据库将不被允许。",
+     "在此希望已经获得歌声数据集副本的用户停止使用该角色所属歌声数据库进行创作，不要将其传播给其他人。",
+     "如有违背管理者个人意愿的稿件，我方可能会提出交涉下架相关视频/音频。"
+    ],
+    "timbreNames": [
+     "Natural"
+    ],
+    "languages": [
+     {
+      "label": "汉语普通话",
+      "code": "zh"
+     },
+     {
+      "label": "日语",
+      "code": "ja"
+     }
+    ],
+    "version": "v4",
+    "timbres": [
+     {
+      "name": "Natural",
+      "intro": "以最自然的发声状态录制的声库",
+      "range": "D2 ~ B4",
+      "tempo": "60 ~ 160 BPM"
+     }
+    ],
+    "samples": [
+     {
+      "label": "Natural音色Ⅰ",
+      "timbre": "Natural",
+      "url": "/assets/sample/Fuyao_Unknown_Natural_01.mp3"
+     },
+     {
+      "label": "Natural音色Ⅱ",
+      "timbre": "Natural",
+      "url": "/assets/sample/Fuyao_Unknown_Natural_02.mp3"
+     }
+    ],
+    "credits": [
+     {
+      "label": "角色配音",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "原音标定",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "声库制作",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "声库下载",
+      "value": "404 Not Found"
+     },
+     {
+      "label": "编辑器下载",
+      "value": "404 Not Found"
+     }
+    ],
+    "links": [],
+    "redirect": "",
+    "engineIntroLinks": []
+   }
+  ],
+  "album": "/assets/album/Fuyao-Album.png"
+ },
+ {
+  "slug": "Fuhao",
+  "name": "浮皓",
+  "tagline": "寂月照海潮。",
+  "subtitle": "多引擎男性青年虚拟歌手",
+  "profile": {
+   "性别": "男",
+   "身高": "183cm",
+   "年龄": "17岁",
+   "生日": "05月16日"
+  },
+  "colors": {
+   "primary": "#D0D7E5",
+   "secondary": "#FFB600"
+  },
+  "illusts": [
+   {
+    "title": "立绘1",
+    "design": "秋霜人形",
+    "paint": "秋霜人形",
+    "icon": "/assets/icon/Fuhao_Icon_01.png",
+    "illust": "/assets/illust/Fuhao_Illust_01.png"
+   },
+   {
+    "title": "立绘2",
+    "design": "XUNZ-",
+    "paint": "XUNZ-",
+    "icon": "/assets/icon/Fuhao_Icon_02.png",
+    "illust": "/assets/illust/Fuhao_Illust_02.png"
+   }
+  ],
+  "voicebanks": [
+   {
+    "title": "浮皓 for DeepVocal",
+    "engine": "DeepVocal",
+    "engineSite": "https://www.deep-vocal.com/#/",
+    "engineIntro": "DeepVocal是由 [BoxStar](https://space.bilibili.com/7644915) 自主研发的拼接式歌声合成引擎，具有操作便捷、音素系统高度可定制化等特点。",
+    "notices": [
+     "2024年08月08日0点后，「浮皓」歌声数据库将暂时关闭声库申请通道并下架，未经许可使用与传播「浮皓」歌声数据库将不被允许。",
+     "在此希望已经获得歌声数据集副本的用户停止使用该角色所属歌声数据库进行创作，不要将其传播给其他人。",
+     "如有违背管理者个人意愿的稿件，我方可能会提出交涉下架相关视频/音频。"
+    ],
+    "timbreNames": [
+     "Original",
+     "Power"
+    ],
+    "languages": [
+     {
+      "label": "汉语普通话",
+      "code": "zh"
+     },
+     {
+      "label": "日语",
+      "code": "ja"
+     }
+    ],
+    "version": "2020",
+    "timbres": [
+     {
+      "name": "Original",
+      "intro": "以自然柔和的发声状态录制的声库",
+      "range": "E2 ~ D4",
+      "tempo": "60 ~ 150 BPM"
+     },
+     {
+      "name": "Power",
+      "intro": "以强劲有力的发声状态录制的声库",
+      "range": "E2 ~ F4",
+      "tempo": "70 ~ 160 BPM"
+     }
+    ],
+    "samples": [
+     {
+      "label": "Power音色Ⅰ",
+      "timbre": "Power",
+      "url": "/assets/sample/Fuhao_DeepVocal_Power_01.mp3"
+     }
+    ],
+    "credits": [
+     {
+      "label": "角色配音",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "原音标定",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "声库制作",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "声库下载",
+      "value": "已下架"
+     }
+    ],
+    "links": [
+     {
+      "label": "编辑器下载",
+      "items": [
+       {
+        "text": "DeepVocal 官方网站",
+        "url": "https://www.deep-vocal.com/#/"
+       }
+      ]
+     }
+    ],
+    "redirect": "",
+    "engineIntroLinks": [
+     {
+      "text": "BoxStar",
+      "url": "https://space.bilibili.com/7644915"
+     }
+    ]
+   },
+   {
+    "title": "浮皓 for DiffSinger",
+    "engine": "DiffSinger",
+    "engineSite": "https://github.com/openvpi/DiffSinger",
+    "engineIntro": "DiffSinger 是由 [刘静林（MoonInTheRiver）](https://github.com/MoonInTheRiver) 开创性推出， [YQ之神@OpenVPI团队](https://space.bilibili.com/102844209) 接续开发维护的次世代开源AI歌声合成引擎，具有高度可定制化、更新迅速等特点。DiffSinger 具有高创造力且完备的开源社区，请访问哔哩哔哩 [DiffSinger开源社区](https://space.bilibili.com/3546580430883685) 或 QQ 交流群：907879266。",
+    "notices": [
+     "2024年08月08日0点后，「浮皓」歌声数据库将暂时关闭声库申请通道并下架，未经许可使用与传播「浮皓」歌声数据库将不被允许。",
+     "在此希望已经获得歌声数据集副本的用户停止使用该角色所属歌声数据库进行创作，不要将其传播给其他人。",
+     "如有违背管理者个人意愿的稿件，我方可能会提出交涉下架相关视频/音频。"
+    ],
+    "timbreNames": [
+     "Power"
+    ],
+    "languages": [
+     {
+      "label": "汉语普通话",
+      "code": "zh"
+     },
+     {
+      "label": "日语",
+      "code": "ja"
+     },
+     {
+      "label": "英语",
+      "code": "en"
+     },
+     {
+      "label": "朝鲜语",
+      "code": "ko"
+     },
+     {
+      "label": "汉语广东话",
+      "code": "zh-yue"
+     },
+     {
+      "label": "汉语湖南话",
+      "code": "zh-hsn"
+     },
+     {
+      "label": "汉语闽南话",
+      "code": "zh-nan"
+     }
+    ],
+    "version": "Retake ver.002",
+    "timbres": [
+     {
+      "name": "Power",
+      "intro": "以强劲有力的发声状态录制的声库",
+      "range": "F2 ~ F4",
+      "tempo": "70 ~ 160 BPM"
+     }
+    ],
+    "samples": [],
+    "credits": [
+     {
+      "label": "角色配音",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "原音标定",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "声库制作",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "声库下载",
+      "value": "已下架"
+     }
+    ],
+    "links": [
+     {
+      "label": "编辑器下载",
+      "items": [
+       {
+        "text": "TuneLab v2.0",
+        "url": "https://github.com/LiuYunPlayer/TuneLab"
+       }
+      ]
+     }
+    ],
+    "redirect": "",
+    "engineIntroLinks": [
+     {
+      "text": "刘静林（MoonInTheRiver）",
+      "url": "https://github.com/MoonInTheRiver"
+     },
+     {
+      "text": "YQ之神@OpenVPI团队",
+      "url": "https://space.bilibili.com/102844209"
+     },
+     {
+      "text": "DiffSinger开源社区",
+      "url": "https://space.bilibili.com/3546580430883685"
+     }
+    ]
+   },
+   {
+    "title": "浮皓 for ACE Studio",
+    "engine": "ACE Studio",
+    "engineSite": "https://ace-studio.timedomain.cn/",
+    "engineIntro": "ACE Studio 是由北京时域科技有限公司自主研发的次世代 AI 歌声合成引擎，支持汉语普通话、日语与英语等多种语言的高性能合成，现已面向个人非企业单位用户提供歌声数据库定制服务。根据不同的付费会员档位，用户可以获取声线调整、干声转换等进阶功能。",
+    "notices": [
+     "2024年08月08日0点后，「浮皓」歌声数据库将暂时关闭声库申请通道并下架，未经许可使用与传播「浮皓」歌声数据库将不被允许。",
+     "在此希望已经获得歌声数据集副本的用户停止使用该角色所属歌声数据库进行创作，不要将其传播给其他人。",
+     "如有违背管理者个人意愿的稿件，我方可能会提出交涉下架相关视频/音频。"
+    ],
+    "timbreNames": [
+     "Original",
+     "Power"
+    ],
+    "languages": [
+     {
+      "label": "汉语普通话",
+      "code": "zh"
+     },
+     {
+      "label": "日语",
+      "code": "ja"
+     },
+     {
+      "label": "英语",
+      "code": "en"
+     },
+     {
+      "label": "西班牙语",
+      "code": "es"
+     }
+    ],
+    "version": "Solo24",
+    "timbres": [
+     {
+      "name": "Original",
+      "intro": "以自然柔和的发声状态录制的声库",
+      "range": "E2 ~ F4",
+      "tempo": "60 ~ 150 BPM"
+     },
+     {
+      "name": "Power",
+      "intro": "以强劲有力的发声状态录制的声库",
+      "range": "E2 ~ B4",
+      "tempo": "70 ~ 160 BPM"
+     }
+    ],
+    "samples": [
+     {
+      "label": "Power音色Ⅰ",
+      "timbre": "Power",
+      "url": "/assets/sample/Fuhao_ACE_Studio_Power_01.mp3"
+     },
+     {
+      "label": "Power音色Ⅱ",
+      "timbre": "Power",
+      "url": "/assets/sample/Fuhao_ACE_Studio_Power_02.mp3"
+     }
+    ],
+    "credits": [
+     {
+      "label": "角色配音",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "原音标定",
+      "value": "北京时域科技有限公司（自动推定）"
+     },
+     {
+      "label": "声库制作",
+      "value": "北京时域科技有限公司"
+     }
+    ],
+    "links": [
+     {
+      "label": "声库申请",
+      "items": [
+       {
+        "text": "ACE Studio 素材社区",
+        "url": "https://acestudio.cn/app/creative-library/voices"
+       }
+      ]
+     },
+     {
+      "label": "编辑器下载",
+      "items": [
+       {
+        "text": "ACE Studio 官方网站",
+        "url": "https://ace-studio.timedomain.cn/"
+       }
+      ]
+     }
+    ],
+    "redirect": "",
+    "engineIntroLinks": []
+   },
+   {
+    "title": "浮皓 for Unknown",
+    "engine": "Unknown",
+    "engineSite": "404 Not Found",
+    "engineIntro": "404 Not Found",
+    "notices": [
+     "2024年08月08日0点后，「浮皓」歌声数据库将暂时关闭声库申请通道并下架，未经许可使用与传播「浮皓」歌声数据库将不被允许。",
+     "在此希望已经获得歌声数据集副本的用户停止使用该角色所属歌声数据库进行创作，不要将其传播给其他人。",
+     "如有违背管理者个人意愿的稿件，我方可能会提出交涉下架相关视频/音频。"
+    ],
+    "timbreNames": [
+     "Power"
+    ],
+    "languages": [
+     {
+      "label": "汉语普通话",
+      "code": "zh"
+     }
+    ],
+    "version": "v4",
+    "timbres": [
+     {
+      "name": "Natural",
+      "intro": "以以强劲有力的发声状态录制的声库",
+      "range": "D2 ~ F4",
+      "tempo": "60 ~ 160 BPM"
+     }
+    ],
+    "samples": [
+     {
+      "label": "Power音色Ⅰ",
+      "timbre": "Power",
+      "url": "/assets/sample/Fuhao_Unknown_Power_01.mp3"
+     }
+    ],
+    "credits": [
+     {
+      "label": "角色配音",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "原音标定",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "声库制作",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "声库下载",
+      "value": "404 Not Found"
+     },
+     {
+      "label": "编辑器下载",
+      "value": "404 Not Found"
+     }
+    ],
+    "links": [],
+    "redirect": "",
+    "engineIntroLinks": []
+   }
+  ],
+  "album": "/assets/album/Fuhao-Album.png"
+ },
+ {
+  "slug": "Wanzhi",
+  "name": "宛沚",
+  "tagline": "宛在水中沚。",
+  "subtitle": "多引擎女性青年虚拟歌手",
+  "profile": {
+   "性别": "女",
+   "身高": "164cm",
+   "生日": "10月22日"
+  },
+  "colors": {
+   "primary": "#545F8D",
+   "secondary": "#88ADA6"
+  },
+  "illusts": [
+   {
+    "title": "立绘1",
+    "design": "海纳不是法号",
+    "paint": "海纳不是法号",
+    "icon": "/assets/icon/Wanzhi_Icon_01.png",
+    "illust": "/assets/illust/Wanzhi_Illust_01.png"
+   }
+  ],
+  "voicebanks": [
+   {
+    "title": "宛沚 for VocalSharp",
+    "engine": "VocalSharp",
+    "engineSite": "https://www.vocalsharp.net/",
+    "engineIntro": "VocalSharp是由 [金刚小刘](https://space.bilibili.com/24331207) 自主研发的拼接式歌声合成引擎，具有调整空间大、音素系统高度可定制化等特点。",
+    "notices": [],
+    "timbreNames": [
+     "Natural"
+    ],
+    "languages": [
+     {
+      "label": "日语",
+      "code": "ja"
+     }
+    ],
+    "version": "2021",
+    "timbres": [
+     {
+      "name": "Natural",
+      "intro": "以最自然的发声状态录制的声库",
+      "range": "G3 ~ C5",
+      "tempo": "70 ~ 140 BPM"
+     }
+    ],
+    "samples": [
+     {
+      "label": "Natural音色Ⅰ",
+      "timbre": "Natural",
+      "url": "/assets/sample/Wanzhi_VocalSharp_Natural_01.mp3"
+     },
+     {
+      "label": "Natural音色Ⅱ",
+      "timbre": "Natural",
+      "url": "/assets/sample/Wanzhi_VocalSharp_Natural_02.mp3"
+     }
+    ],
+    "credits": [
+     {
+      "label": "角色配音",
+      "value": "卷毛兔w"
+     },
+     {
+      "label": "原音标定",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "声库制作",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "声库下载",
+      "value": "已下架"
+     }
+    ],
+    "links": [
+     {
+      "label": "编辑器下载",
+      "items": [
+       {
+        "text": "VocalSharp 官方网站",
+        "url": "https://www.vocalsharp.net/"
+       }
+      ]
+     }
+    ],
+    "redirect": "",
+    "engineIntroLinks": [
+     {
+      "text": "金刚小刘",
+      "url": "https://space.bilibili.com/24331207"
+     }
+    ]
+   },
+   {
+    "title": "宛沚 for Project Vogen",
+    "engine": "Project Vogen",
+    "engineSite": "[Doaz@清华大学智能技术与系统国家重点实验室](https://space.bilibili.com/169955)",
+    "engineIntro": "Project Vogen是由 [Doaz@清华大学智能技术与系统国家重点实验室](https://space.bilibili.com/169955) 自主研发的AI歌声合成引擎，目前已支持汉语普通话、广州话、梧州话、苏州话等多种中文官话与方言。",
+    "notices": [],
+    "timbreNames": [
+     "Natural"
+    ],
+    "languages": [
+     {
+      "label": "汉语普通话",
+      "code": "zh"
+     },
+     {
+      "label": "汉语广东话",
+      "code": "zh-yue"
+     }
+    ],
+    "version": "2020",
+    "timbres": [
+     {
+      "name": "Natural",
+      "intro": "以最自然的发声状态录制的声库",
+      "range": "A3 ~ C5",
+      "tempo": "70 ~ 140 BPM"
+     }
+    ],
+    "samples": [
+     {
+      "label": "Natural音色Ⅰ",
+      "timbre": "Natural",
+      "url": "/assets/sample/Wanzhi_Vogen_Natural_01.mp3"
+     },
+     {
+      "label": "Natural音色Ⅱ",
+      "timbre": "Natural",
+      "url": "/assets/sample/Wanzhi_Vogen_Natural_02.mp3"
+     }
+    ],
+    "credits": [
+     {
+      "label": "角色配音",
+      "value": "卷毛兔w"
+     },
+     {
+      "label": "原音标定",
+      "value": "Doaz（MFA自动推定）"
+     },
+     {
+      "label": "声库制作",
+      "value": "Doaz"
+     }
+    ],
+    "links": [
+     {
+      "label": "声库下载",
+      "items": [
+       {
+        "text": "GitHub Releases",
+        "url": "https://github.com/Muzium/muzium.github.io/releases/download/v1.0.0/voicelib.wanzhi.vogeon"
+       }
+      ]
+     },
+     {
+      "label": "编辑器下载",
+      "items": [
+       {
+        "text": "OpenUTAU 官方网站",
+        "url": "https://www.openutau.com/"
+       }
+      ]
+     }
+    ],
+    "redirect": "",
+    "engineIntroLinks": [
+     {
+      "text": "Doaz@清华大学智能技术与系统国家重点实验室",
+      "url": "https://space.bilibili.com/169955"
+     }
+    ]
+   },
+   {
+    "title": "宛沚 for 歌叽歌叽",
+    "engine": "歌叽歌叽",
+    "engineSite": "https://gejigejikugou.com/index.html",
+    "engineIntro": "歌叽歌叽是由腾讯音乐集团广州酷狗计算机科技有限公司推出的AI歌声合成引擎，现已停止维护。",
+    "notices": [],
+    "timbreNames": [
+     "Natural"
+    ],
+    "languages": [
+     {
+      "label": "汉语普通话",
+      "code": "zh"
+     }
+    ],
+    "version": "2022",
+    "timbres": [
+     {
+      "name": "Natural",
+      "intro": "以最自然的发声状态录制的声库",
+      "range": "B3 ~ C5",
+      "tempo": "60 ~ 140 BPM"
+     }
+    ],
+    "samples": [],
+    "credits": [
+     {
+      "label": "角色配音",
+      "value": "卷毛兔w"
+     },
+     {
+      "label": "原音标定",
+      "value": "广州酷狗计算机科技有限公司（自动推定）"
+     },
+     {
+      "label": "声库制作",
+      "value": "广州酷狗计算机科技有限公司"
+     },
+     {
+      "label": "声库下载",
+      "value": "无法提供"
+     }
+    ],
+    "links": [
+     {
+      "label": "编辑器下载",
+      "items": [
+       {
+        "text": "歌叽歌叽官方网站",
+        "url": "https://gejigejikugou.com/index.html"
+       }
+      ]
+     }
+    ],
+    "redirect": "",
+    "engineIntroLinks": []
+   },
+   {
+    "title": "宛沚 for DiffSinger",
+    "engine": "DiffSinger",
+    "engineSite": "https://github.com/openvpi/DiffSinger",
+    "engineIntro": "DiffSinger 是由 [刘静林（MoonInTheRiver）](https://github.com/MoonInTheRiver) 开创性推出， [YQ之神@OpenVPI团队](https://space.bilibili.com/102844209) 接续开发维护的次世代开源AI歌声合成引擎，具有高度可定制化、更新迅速等特点。DiffSinger 具有高创造力且完备的开源社区，请访问哔哩哔哩 [DiffSinger开源社区](https://space.bilibili.com/3546580430883685) 或 QQ 交流群：907879266。",
+    "notices": [],
+    "timbreNames": [
+     "Natural",
+     "Power"
+    ],
+    "languages": [
+     {
+      "label": "汉语普通话",
+      "code": "zh"
+     },
+     {
+      "label": "日语",
+      "code": "ja"
+     },
+     {
+      "label": "英语",
+      "code": "en"
+     },
+     {
+      "label": "朝鲜语",
+      "code": "ko"
+     },
+     {
+      "label": "汉语广东话",
+      "code": "zh-yue"
+     },
+     {
+      "label": "汉语湖南话",
+      "code": "zh-hsn"
+     },
+     {
+      "label": "汉语闽南话",
+      "code": "zh-nan"
+     }
+    ],
+    "version": "Retake ver.002",
+    "timbres": [
+     {
+      "name": "Natural",
+      "intro": "以最自然的发声状态录制的声库",
+      "range": "F3 ~ D5",
+      "tempo": "70 ~ 140 BPM"
+     },
+     {
+      "name": "Power",
+      "intro": "以大声朗读的发声状态录制的声库",
+      "range": "E3 ~ E5",
+      "tempo": "70 ~ 140 BPM"
+     }
+    ],
+    "samples": [
+     {
+      "label": "Natural音色Ⅰ",
+      "timbre": "Natural",
+      "url": "/assets/sample/Wanzhi_DiffSinger_Natural_01.mp3"
+     },
+     {
+      "label": "Natural音色Ⅱ",
+      "timbre": "Natural",
+      "url": "/assets/sample/Wanzhi_DiffSinger_Natural_02.mp3"
+     }
+    ],
+    "credits": [
+     {
+      "label": "角色配音",
+      "value": "卷毛兔w"
+     },
+     {
+      "label": "原音标定",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "声库制作",
+      "value": "他城（復一）"
+     }
+    ],
+    "links": [
+     {
+      "label": "声库下载",
+      "items": [
+       {
+        "text": "卷毛兔w",
+        "url": "https://space.bilibili.com/1898963"
+       }
+      ]
+     },
+     {
+      "label": "编辑器下载",
+      "items": [
+       {
+        "text": "Tunelab v2.0",
+        "url": "https://github.com/LiuYunPlayer/TuneLab"
+       }
+      ]
+     }
+    ],
+    "redirect": "",
+    "engineIntroLinks": [
+     {
+      "text": "刘静林（MoonInTheRiver）",
+      "url": "https://github.com/MoonInTheRiver"
+     },
+     {
+      "text": "YQ之神@OpenVPI团队",
+      "url": "https://space.bilibili.com/102844209"
+     },
+     {
+      "text": "DiffSinger开源社区",
+      "url": "https://space.bilibili.com/3546580430883685"
+     }
+    ]
+   },
+   {
+    "title": "宛沚 for ACE Studio",
+    "engine": "ACE Studio",
+    "engineSite": "https://ace-studio.timedomain.cn/",
+    "engineIntro": "ACE Studio 是由北京时域科技有限公司自主研发的次世代 AI 歌声合成引擎，支持汉语普通话、日语与英语等多种语言的高性能合成，现已面向个人非企业单位用户提供歌声数据库定制服务。根据不同的付费会员档位，用户可以获取声线调整、干声转换等进阶功能。",
+    "notices": [],
+    "timbreNames": [
+     "Natural",
+     "Dark",
+     "Power"
+    ],
+    "languages": [
+     {
+      "label": "汉语普通话",
+      "code": "zh"
+     },
+     {
+      "label": "日语",
+      "code": "ja"
+     },
+     {
+      "label": "英语",
+      "code": "en"
+     },
+     {
+      "label": "西班牙语",
+      "code": "es"
+     }
+    ],
+    "version": "Solo24",
+    "timbres": [
+     {
+      "name": "Natural",
+      "intro": "以最自然的发声状态录制的声库",
+      "range": "F3 ~ F5",
+      "tempo": "60 ~ 160 BPM"
+     },
+     {
+      "name": "Dark",
+      "intro": "以朦胧忧郁为特点录制的声库",
+      "range": "G3 ~ C5",
+      "tempo": "60 ~ 160 BPM"
+     },
+     {
+      "name": "Power",
+      "intro": "以大声朗读的发声状态录制的声库",
+      "range": "E3 ~ G5",
+      "tempo": "60 ~ 160 BPM"
+     }
+    ],
+    "samples": [
+     {
+      "label": "Natural音色Ⅰ",
+      "timbre": "Natural",
+      "url": "/assets/sample/Wanzhi_ACE_Studio_Natural_01.mp3"
+     },
+     {
+      "label": "Natural音色Ⅱ",
+      "timbre": "Natural",
+      "url": "/assets/sample/Wanzhi_ACE_Studio_Natural_02.mp3"
+     },
+     {
+      "label": "Dark音色Ⅰ",
+      "timbre": "Dark",
+      "url": "/assets/sample/Wanzhi_ACE_Studio_Dark_01.mp3"
+     },
+     {
+      "label": "Power音色Ⅰ",
+      "timbre": "Power",
+      "url": "/assets/sample/Wanzhi_ACE_Studio_Power_01.mp3"
+     }
+    ],
+    "credits": [
+     {
+      "label": "角色配音",
+      "value": "卷毛兔w"
+     },
+     {
+      "label": "原音标定",
+      "value": "北京时域科技有限公司（自动推定）"
+     },
+     {
+      "label": "声库制作",
+      "value": "北京时域科技有限公司"
+     },
+     {
+      "label": "声库申请",
+      "value": "已关闭申请通道"
+     }
+    ],
+    "links": [
+     {
+      "label": "编辑器下载",
+      "items": [
+       {
+        "text": "ACE Studio 官方网站",
+        "url": "https://ace-studio.timedomain.cn/"
+       }
+      ]
+     }
+    ],
+    "redirect": "",
+    "engineIntroLinks": []
+   },
+   {
+    "title": "宛沚 for Unknown",
+    "engine": "Unknown",
+    "engineSite": "404 Not Found",
+    "engineIntro": "404 Not Found",
+    "notices": [],
+    "timbreNames": [
+     "Power"
+    ],
+    "languages": [
+     {
+      "label": "汉语普通话",
+      "code": "zh"
+     }
+    ],
+    "version": "v4",
+    "timbres": [
+     {
+      "name": "Power",
+      "intro": "以大声朗读的发声状态录制的声库",
+      "range": "E3 ~ G5",
+      "tempo": "60 ~ 160 BPM"
+     }
+    ],
+    "samples": [
+     {
+      "label": "Natural音色Ⅰ",
+      "timbre": "Natural",
+      "url": "/assets/sample/Wanzhi_Unknown_Natural_01.mp3"
+     },
+     {
+      "label": "Power音色Ⅰ",
+      "timbre": "Power",
+      "url": "/assets/sample/Wanzhi_Unknown_Power_01.mp3"
+     }
+    ],
+    "credits": [
+     {
+      "label": "角色配音",
+      "value": "卷毛兔w"
+     },
+     {
+      "label": "原音标定",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "声库制作",
+      "value": "他城（復一）"
+     },
+     {
+      "label": "声库下载",
+      "value": "404 Not Found"
+     },
+     {
+      "label": "编辑器下载",
+      "value": "404 Not Found"
+     }
+    ],
+    "links": [],
+    "redirect": "",
+    "engineIntroLinks": []
+   }
+  ],
+  "album": "/assets/album/Wanzhi-Album.png"
+ },
+ {
+  "slug": "Feimeng",
+  "name": "飞梦",
+  "tagline": "仰望星空的幻想者们。",
+  "subtitle": "多引擎女性青年虚拟歌手",
+  "profile": {
+   "性别": "女",
+   "身高": "160cm",
+   "生日": "3月6日"
+  },
+  "colors": {
+   "primary": "#FFC859"
+  },
+  "illusts": [
+   {
+    "title": "立绘1",
+    "design": "椰椰子",
+    "paint": "椰椰子",
+    "icon": "/assets/icon/Feimeng_Icon_01.png",
+    "illust": "/assets/illust/Feimeng_Illust_01.png"
+   },
+   {
+    "title": "立绘2",
+    "design": "椰椰子、阿也",
+    "paint": "阿也",
+    "icon": "/assets/icon/Feimeng_Icon_02.png",
+    "illust": "/assets/illust/Feimeng_Illust_02.png"
+   },
+   {
+    "title": "立绘3",
+    "design": "直立行走",
+    "paint": "直立行走",
+    "icon": "/assets/icon/Feimeng_Icon_03.png",
+    "illust": "/assets/illust/Feimeng_Illust_03.png"
+   }
+  ],
+  "voicebanks": [
+   {
+    "title": "飞梦 for UTAU",
+    "engine": "UTAU",
+    "engineSite": "http://utau.us/",
+    "engineIntro": "UTAU是由饴屋P开发的老牌免费拼接式歌声合成引擎，可以替换重采样引擎与高度定制化，可以支持各种社区开发的辅助工具与语言。",
+    "notices": [
+     "「飞梦」歌声数据库现已面向非社员永久关闭声库下载通道并下架，非本社社员未经许可使用与传播「飞梦」歌声数据库将不被允许。",
+     "在此希望已经获得歌声数据集副本的用户停止使用该角色所属歌声数据库进行创作，不要将其传播给其他人。",
+     "如有违背管理者个人意愿的稿件，我方可能会提出交涉下架相关视频/音频。"
+    ],
+    "timbreNames": [
+     "Original"
+    ],
+    "languages": [
+     {
+      "label": "汉语普通话",
+      "code": "zh"
+     }
+    ],
+    "version": "2019",
+    "timbres": [
+     {
+      "name": "Original",
+      "intro": "以大声朗读的发声状态录制的声库",
+      "range": "E3 ~ G5",
+      "tempo": "70 ~ 150 BPM"
+     }
+    ],
+    "samples": [
+     {
+      "label": "Original音色Ⅰ",
+      "timbre": "Original",
+      "url": "/assets/sample/Feimeng_UTAU_Original_01.mp3"
+     },
+     {
+      "label": "Original音色Ⅰ",
+      "timbre": "Original",
+      "url": "/assets/sample/Feimeng_UTAU_Original_02.mp3"
+     }
+    ],
+    "credits": [
+     {
+      "label": "角色配音",
+      "value": "卷毛兔w"
+     },
+     {
+      "label": "原音标定",
+      "value": "夏宇、他城（復一）"
+     },
+     {
+      "label": "声库制作",
+      "value": "夏宇、他城（復一）"
+     },
+     {
+      "label": "声库下载",
+      "value": "已下架"
+     }
+    ],
+    "links": [
+     {
+      "label": "编辑器下载",
+      "items": [
+       {
+        "text": "OpenUTAU 官方网站",
+        "url": "https://www.openutau.com/"
+       }
+      ]
+     }
+    ],
+    "redirect": "",
+    "engineIntroLinks": []
+   },
+   {
+    "title": "飞梦 for DeepVocal",
+    "engine": "DeepVocal",
+    "engineSite": "https://www.deep-vocal.com/#/",
+    "engineIntro": "DeepVocal是由 [BoxStar](https://space.bilibili.com/7644915) 自主研发的拼接式歌声合成引擎，具有操作便捷、音素系统高度可定制化等特点。",
+    "notices": [
+     "「飞梦」歌声数据库现已面向非社员永久关闭声库下载通道并下架，非本社社员未经许可使用与传播「飞梦」歌声数据库将不被允许。",
+     "在此希望已经获得歌声数据集副本的用户停止使用该角色所属歌声数据库进行创作，不要将其传播给其他人。",
+     "如有违背管理者个人意愿的稿件，我方可能会提出交涉下架相关视频/音频。"
+    ],
+    "timbreNames": [
+     "Original"
+    ],
+    "languages": [
+     {
+      "label": "汉语普通话",
+      "code": "zh"
+     }
+    ],
+    "version": "2020",
+    "timbres": [
+     {
+      "name": "Original",
+      "intro": "以大声朗读的发声状态录制的声库",
+      "range": "E3 ~ G5",
+      "tempo": "70 ~ 150 BPM"
+     }
+    ],
+    "samples": [
+     {
+      "label": "Original音色Ⅰ",
+      "timbre": "Original",
+      "url": "/assets/sample/Feimeng_DeepVocal_Original_01.mp3"
+     },
+     {
+      "label": "Original音色Ⅱ",
+      "timbre": "Original",
+      "url": "/assets/sample/Feimeng_DeepVocal_Original_02.mp3"
+     }
+    ],
+    "credits": [
+     {
+      "label": "角色配音",
+      "value": "卷毛兔w"
+     },
+     {
+      "label": "原音标定",
+      "value": "夏宇、他城（復一）"
+     },
+     {
+      "label": "声库制作",
+      "value": "夏宇、他城（復一）"
+     },
+     {
+      "label": "声库下载",
+      "value": "已下架"
+     }
+    ],
+    "links": [
+     {
+      "label": "编辑器下载",
+      "items": [
+       {
+        "text": "DeepVocal 官方网站",
+        "url": "https://www.deep-vocal.com/#/"
+       }
+      ]
+     }
+    ],
+    "redirect": "",
+    "engineIntroLinks": [
+     {
+      "text": "BoxStar",
+      "url": "https://space.bilibili.com/7644915"
+     }
+    ]
+   },
+   {
+    "title": "飞梦 for VocalSharp",
+    "engine": "VocalSharp",
+    "engineSite": "",
+    "engineIntro": "",
+    "notices": [
+     "因「飞梦」虚拟歌手企划处于半搁置状态，「飞梦」的新录制日语声库以 Natural 音色共享至「宛沚」名下。"
+    ],
+    "timbreNames": [],
+    "languages": [],
+    "version": "",
+    "timbres": [],
+    "samples": [],
+    "credits": [],
+    "links": [],
+    "redirect": "宛沚 for VocalSharp"
+   },
+   {
+    "title": "飞梦 for ACE Studio",
+    "engine": "ACE Studio",
+    "engineSite": "",
+    "engineIntro": "",
+    "notices": [
+     "因「飞梦」虚拟歌手企划处于半搁置状态，「飞梦」Original 音色的转制 ACE Studio 声库以 Power 音色共享至「宛沚」名下。"
+    ],
+    "timbreNames": [],
+    "languages": [],
+    "version": "",
+    "timbres": [],
+    "samples": [],
+    "credits": [],
+    "links": [],
+    "redirect": "宛沚 for ACE Studio"
+   },
+   {
+    "title": "飞梦 for Unknown",
+    "engine": "Unknown",
+    "engineSite": "",
+    "engineIntro": "",
+    "notices": [
+     "因「飞梦」虚拟歌手企划处于半搁置状态，「飞梦」Original 音色的转制 Unknown 声库以 Power 音色共享至「宛沚」名下。"
+    ],
+    "timbreNames": [],
+    "languages": [],
+    "version": "",
+    "timbres": [],
+    "samples": [],
+    "credits": [],
+    "links": [],
+    "redirect": "宛沚 for Unknown"
+   }
+  ],
+  "album": "/assets/album/Feimeng-Album.png"
+ }
+]

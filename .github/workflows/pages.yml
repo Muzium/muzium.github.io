@@ -1,0 +1,62 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 同一时间只保留一个部署，新的推送会取消进行中的旧部署
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 安装构建依赖
+        run: python -m pip install --upgrade "fonttools[woff]" brotli
+
+      - name: 生成站点数据（角色 / 歌单 / 歌词）
+        run: python site/tools/build_data.py
+
+      # 字体分片体积较大，直接提交进仓库；若 site/fonts 为空则在 CI 里现场生成
+      - name: 生成 Web 字体（仅当仓库内缺失时）
+        run: |
+          if [ -z "$(ls -A site/fonts/*.woff2 2>/dev/null)" ]; then
+            echo "未找到字体分片，开始构建…"
+            python site/tools/build_font.py --weights R SB
+          else
+            echo "已存在字体分片，跳过。"
+          fi
+
+      - name: 关闭 Jekyll 处理
+        run: touch .nojekyll
+
+      - uses: actions/configure-pages@v5
+
+      # 整个仓库根目录作为站点：site/ 内的页面通过 ../assets 引用素材
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

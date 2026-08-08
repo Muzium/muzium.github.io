@@ -1,0 +1,171 @@
+/* 源云明朝 GenWan Min —— 由 site/tools/build_font.py 自动生成，请勿手工编辑 */
+/* 上游：https://github.com/ButTaiwan/genwan-font （SIL OFL 1.1） */
+
+@font-face {
+  font-family: "GenWanMin";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/GenWanMin2TW-R.latin.woff2") format("woff2");
+  unicode-range: U+0020-007F,U+00A0-00FF,U+2000-206F,U+2100-214F,U+2160-217F,U+3000-303F,U+30A0-30FF,U+3040-309F,U+31F0-31FF,U+FF00-FFEF,U+2010-2027,U+25A0-25FF,U+2190-21FF;
+}
+@font-face {
+  font-family: "GenWanMin";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/GenWanMin2TW-R.cjk1.woff2") format("woff2");
+  unicode-range: U+4E00-53FF;
+}
+@font-face {
+  font-family: "GenWanMin";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/GenWanMin2TW-R.cjk2.woff2") format("woff2");
+  unicode-range: U+5400-58FF;
+}
+@font-face {
+  font-family: "GenWanMin";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/GenWanMin2TW-R.cjk3.woff2") format("woff2");
+  unicode-range: U+5900-5DFF;
+}
+@font-face {
+  font-family: "GenWanMin";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/GenWanMin2TW-R.cjk4.woff2") format("woff2");
+  unicode-range: U+5E00-62FF;
+}
+@font-face {
+  font-family: "GenWanMin";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/GenWanMin2TW-R.cjk5.woff2") format("woff2");
+  unicode-range: U+6300-67FF;
+}
+@font-face {
+  font-family: "GenWanMin";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/GenWanMin2TW-R.cjk6.woff2") format("woff2");
+  unicode-range: U+6800-6CFF;
+}
+@font-face {
+  font-family: "GenWanMin";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/GenWanMin2TW-R.cjk7.woff2") format("woff2");
+  unicode-range: U+6D00-71FF;
+}
+@font-face {
+  font-family: "GenWanMin";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/GenWanMin2TW-R.cjk8.woff2") format("woff2");
+  unicode-range: U+7200-76FF;
+}
+@font-face {
+  font-family: "GenWanMin";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/GenWanMin2TW-R.cjk9.woff2") format("woff2");
+  unicode-range: U+7700-7BFF;
+}
+@font-face {
+  font-family: "GenWanMin";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/GenWanMin2TW-R.cjk10.woff2") format("woff2");
+  unicode-range: U+7C00-80FF;
+}
+@font-face {
+  font-family: "GenWanMin";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/GenWanMin2TW-R.cjk11.woff2") format("woff2");
+  unicode-range: U+8100-85FF;
+}
+@font-face {
+  font-family: "GenWanMin";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/GenWanMin2TW-R.cjk12.woff2") format("woff2");
+  unicode-range: U+8600-8AFF;
+}
+@font-face {
+  font-family: "GenWanMin";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/GenWanMin2TW-R.cjk13.woff2") format("woff2");
+  unicode-range: U+8B00-8FFF;
+}
+@font-face {
+  font-family: "GenWanMin";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/GenWanMin2TW-R.cjk14.woff2") format("woff2");
+  unicode-range: U+9000-94FF;
+}
+@font-face {
+  font-family: "GenWanMin";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/GenWanMin2TW-R.cjk15.woff2") format("woff2");
+  unicode-range: U+9500-99FF;
+}
+@font-face {
+  font-family: "GenWanMin";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/GenWanMin2TW-R.cjk16.woff2") format("woff2");
+  unicode-range: U+9A00-9FFF;
+}
+@font-face {
+  font-family: "GenWanMin";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/GenWanMin2TW-R.ext1.woff2") format("woff2");
+  unicode-range: U+3400-3FFF;
+}
+@font-face {
+  font-family: "GenWanMin";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/GenWanMin2TW-R.ext2.woff2") format("woff2");
+  unicode-range: U+4000-46FF;
+}
+@font-face {
+  font-family: "GenWanMin";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/GenWanMin2TW-R.ext3.woff2") format("woff2");
+  unicode-range: U+4700-4DBF;
+}
+@font-face {
+  font-family: "GenWanMin";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/GenWanMin2TW-R.compat.woff2") format("woff2");
+  unicode-range: U+F900-FAFF;
+}

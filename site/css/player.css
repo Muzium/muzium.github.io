@@ -1,0 +1,359 @@
+/* ============================================================
+   MUZIUM — 全局播放器
+   常态：左下角小型播放栏（旋转封面 + 进度条 + 播放列表）
+   最大化：全屏，Apple-Music-like 逐字歌词
+   ============================================================ */
+
+.player {
+  position: fixed; left: 20px; bottom: 20px; z-index: 400;
+  width: min(392px, calc(100vw - 40px));
+  background: color-mix(in srgb, var(--bg-1) 92%, transparent);
+  backdrop-filter: saturate(170%) blur(20px);
+  -webkit-backdrop-filter: saturate(170%) blur(20px);
+  border: 1px solid var(--line-2);
+  box-shadow: var(--shadow-l);
+  transition: opacity .35s var(--ease), transform .35s var(--ease);
+}
+.player[hidden] { display: none; }
+.player.hidden-dock { opacity: 0; transform: translateY(14px) scale(.98); pointer-events: none; }
+
+@media (max-width: 560px) {
+  .player { left: 0; right: 0; bottom: 0; width: auto; border-left: 0; border-right: 0; border-bottom: 0; }
+}
+
+/* ---------- 顶部细进度条 ---------- */
+.p-progress {
+  position: relative; height: 4px; background: var(--bg-3); cursor: pointer;
+  transition: height var(--dur) var(--ease);
+}
+.p-progress:hover { height: 7px; }
+.p-progress-buf { position: absolute; inset: 0 auto 0 0; background: var(--line-2); width: 0; }
+.p-progress-fill { position: absolute; inset: 0 auto 0 0; background: var(--accent); width: 0; }
+.p-progress-knob {
+  position: absolute; top: 50%; left: 0; width: 3px; height: 13px;
+  background: var(--fg); transform: translate(-50%, -50%) scaleY(0);
+  transition: transform var(--dur) var(--ease);
+}
+.p-progress:hover .p-progress-knob { transform: translate(-50%, -50%) scaleY(1); }
+
+/* ---------- 主体 ---------- */
+.p-main { display: flex; align-items: center; gap: 13px; padding: 12px 13px; }
+
+/* 旋转专辑封面（播放/展厅按钮叠放其上） */
+.p-disc {
+  position: relative; width: 54px; height: 54px; flex: 0 0 auto;
+  border-radius: 50%;               /* 唯一的圆形：唱片本身 */
+  overflow: hidden;
+  background: var(--bg-3);
+  box-shadow: 0 0 0 1px var(--line-2);
+}
+.p-disc img {
+  width: 100%; height: 100%; object-fit: cover;
+  animation: spin 18s linear infinite; animation-play-state: paused;
+}
+.p-disc.spinning img { animation-play-state: running; }
+@keyframes spin { to { transform: rotate(360deg); } }
+/* 封面是歌手头像，不做中心轴孔，否则会正好遮住脸 */
+
+/* 叠在封面上的播放键 */
+.p-disc-btn {
+  position: absolute; inset: 0; z-index: 2;
+  display: grid; place-items: center;
+  background: rgba(6, 6, 8, .5);
+  opacity: 0; transition: opacity var(--dur) var(--ease);
+}
+.p-disc:hover .p-disc-btn, .p-disc-btn:focus-visible { opacity: 1; }
+.p-disc-btn svg { width: 17px; height: 17px; fill: #fff;
+  filter: drop-shadow(0 1px 3px rgba(0,0,0,.7)); }
+
+.p-meta { min-width: 0; flex: 1; max-width: 50%; }
+.p-title { font-size: 13.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.p-artist { font-size: 11.5px; color: var(--fg-2); white-space: nowrap; overflow: hidden;
+  text-overflow: ellipsis; margin-top: 2px; }
+.p-time { font-size: 11px; color: var(--fg-2); font-variant-numeric: tabular-nums;
+  letter-spacing: .04em; margin-top: 3px; }
+
+.p-ctrls { display: flex; align-items: center; gap: 2px; flex: 0 0 auto; }
+
+.p-btn {
+  width: 32px; height: 32px; display: grid; place-items: center;
+  color: var(--fg-1);
+  transition: color var(--dur) var(--ease), background var(--dur) var(--ease);
+}
+.p-btn:hover { color: var(--fg); background: var(--bg-3); }
+.p-btn svg { width: 15px; height: 15px; fill: currentColor; }
+.p-btn.on { color: var(--accent); }
+
+/* ---------- 播放列表抽屉 ---------- */
+.p-queue {
+  border-top: 1px solid var(--line);
+  max-height: 0; overflow: hidden;
+  transition: max-height .38s var(--ease);
+}
+.p-queue.open { max-height: min(52vh, 400px); }
+.p-queue-inner { max-height: min(52vh, 400px); overflow-y: auto; }
+.p-queue-head { display: flex; align-items: center; justify-content: space-between;
+  padding: 9px 14px; font-size: 11px; letter-spacing: .2em; color: var(--fg-2);
+  position: sticky; top: 0; background: var(--bg-2); border-bottom: 1px solid var(--line); z-index: 1; }
+.p-q-item {
+  display: flex; align-items: center; gap: 11px; padding: 9px 14px;
+  cursor: pointer; border-bottom: 1px solid var(--bg-3);
+  transition: background var(--dur) var(--ease);
+}
+.p-q-item:hover { background: var(--bg-2); }
+.p-q-item.on { background: var(--bg-3); }
+.p-q-item.on .p-q-title { color: var(--accent); }
+.p-q-idx { width: 20px; text-align: center; font-size: 11px; color: var(--fg-2);
+  font-variant-numeric: tabular-nums; flex: 0 0 auto; }
+.p-q-body { min-width: 0; flex: 1; }
+.p-q-title { font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.p-q-artist { font-size: 11px; color: var(--fg-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* ============================================================
+   最大化视图
+   ============================================================ */
+.pmax {
+  position: fixed; inset: 0; z-index: 500;
+  display: grid; grid-template-rows: auto 1fr auto;
+  background: var(--bg);
+  opacity: 0; pointer-events: none;
+  transform: scale(1.015);
+  transition: opacity .4s var(--ease), transform .45s var(--ease-out);
+}
+.pmax.open { opacity: 1; pointer-events: auto; transform: none; }
+/* 最大化内部始终是深色背景（模糊封面），
+   因此在此作用域内覆盖前景/底色变量，两种主题下表现一致 */
+.pmax {
+  --fg:    #f4f4f7;
+  --fg-1:  #b9b9c6;
+  --fg-2:  #8a8a95;
+  --bg-2:  rgba(255, 255, 255, .08);
+  --bg-3:  rgba(255, 255, 255, .13);
+  --line:  rgba(255, 255, 255, .12);
+  --line-2:rgba(255, 255, 255, .22);
+  color: var(--fg);
+}
+
+/* 由当前封面取色的背景光晕 */
+.pmax-bg { position: absolute; inset: 0; z-index: 0; overflow: hidden; background: #08080a; }
+.pmax-bg img {
+  position: absolute; inset: -18%; width: 136%; height: 136%; object-fit: cover;
+  filter: blur(88px) saturate(200%) brightness(.52);
+  transform: scale(1.15); animation: drift 34s var(--ease) infinite alternate;
+}
+@keyframes drift {
+  from { transform: scale(1.14) translate3d(-2%, -1.5%, 0); }
+  to   { transform: scale(1.26) translate3d(2%, 1.5%, 0); }
+}
+.pmax-bg::after { content: ""; position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(8,8,10,.66), rgba(8,8,10,.9)); }
+
+.pmax-top {
+  position: relative; z-index: 2;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 18px clamp(18px, 4vw, 40px);
+}
+.pmax-top .eyebrow { color: var(--fg-1); }
+
+/* 整体在视口内居中，两列之间留出更大的呼吸空间 */
+.pmax-body {
+  position: relative; z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(0, 400px) minmax(0, 560px);
+  justify-content: center;
+  gap: clamp(48px, 8vw, 132px);
+  align-items: center;
+  padding: 0 clamp(24px, 5vw, 64px);
+  min-height: 0;
+}
+/* 桌面端只让歌词列撑满 body 高度（flex:1 才能滚动、当前行居中）；
+   封面列保持原正方形、在列内垂直居中，避免被拉伸成椭圆 */
+.pmax-body > .pmax-info { align-self: stretch; min-height: 0; }
+.pmax-body > .pmax-art { align-self: center; }
+@media (max-width: 900px) {
+  .pmax-body { grid-template-columns: 1fr; align-content: start; gap: 22px;
+    overflow-y: auto; padding-bottom: 20px; }
+  .pmax-art { max-width: 210px; margin: 0 auto; }
+  .pmax-info { text-align: center; }
+  .pmax-tags { justify-content: center; }
+}
+
+/* 最大化里的大唱片：封面即歌手头像，不打轴孔 */
+.pmax-art { position: relative; width: 100%; aspect-ratio: 1; }
+.pmax-art img {
+  width: 100%; height: 100%; object-fit: cover; border-radius: 50%;
+  box-shadow: 0 26px 80px rgba(0,0,0,.7), 0 0 0 1px rgba(255,255,255,.09);
+  animation: spin 22s linear infinite; animation-play-state: paused;
+}
+.pmax-art.spinning img { animation-play-state: running; }
+
+.pmax-info { min-width: 0; display: flex; flex-direction: column; min-height: 0; }
+.pmax-title { font-size: clamp(24px, 4.4vw, 46px); letter-spacing: .04em; color: var(--fg); }
+.pmax-artist { color: var(--fg-1); margin-top: 8px; font-size: clamp(14px, 1.8vw, 17px); }
+.pmax-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+
+/* ---------- Apple-Music-like 歌词 ---------- */
+/* 用 flex:1 撑满歌词列剩余高度（而非固定 max-height），
+   配合上下各 50% 的留白，首/尾行也能滚到正中心，当前行永远居中 */
+.lyrics {
+  position: relative;            /* 成为子元素的 offsetParent，offsetTop 与 scrollTop 同基准 */
+  margin-top: clamp(16px, 3vw, 30px);
+  flex: 1 1 auto; min-height: 0;
+  overflow-y: auto; overflow-x: hidden;
+  scrollbar-width: none;
+  /* 上下对称淡出，透明区收窄到 12%，让已唱白行更多留在实区，强化流动包裹感 */
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 12%, #000 88%, transparent 100%);
+  mask-image: linear-gradient(180deg, transparent 0%, #000 12%, #000 88%, transparent 100%);
+}
+.lyrics::-webkit-scrollbar { display: none; }
+/* 首尾各留半屏（取容器一半高度），保证第一行与最后一行也能滚到正中间 */
+.lyrics-pad { height: 50%; flex: 0 0 auto; }
+
+.lyric-line {
+  padding: 11px 0;
+  font-size: clamp(19px, 2.7vw, 31px);
+  font-weight: 600; line-height: 1.4; letter-spacing: .02em;
+  color: color-mix(in srgb, var(--fg) 26%, transparent);
+  cursor: pointer;
+  transform-origin: left center;
+  transition: color .45s var(--ease), transform .45s var(--ease), opacity .45s var(--ease);
+  opacity: .96;
+}
+.lyric-line:hover { color: color-mix(in srgb, var(--fg) 58%, transparent); }
+.lyric-line.done { color: color-mix(in srgb, var(--fg) 52%, transparent); }
+.lyric-line.active { color: var(--fg); opacity: 1; transform: scale(1.02); }
+.lyric-line.bg { font-size: clamp(15px, 2vw, 22px); opacity: .82; padding-left: 1.4em; }
+
+/* 逐字（karaoke）填充：底色 + 高亮层随时间推进 */
+.lyric-line .syl {
+  display: inline-block;
+  white-space: pre-wrap;
+  background-image: linear-gradient(90deg, var(--fg) 50%, color-mix(in srgb, var(--fg) 25%, transparent) 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  will-change: background-position, transform;
+}
+/* 行进度由 JS 逐帧写 inline background-position，
+   此处不再用选择器覆盖，否则会与 inline 样式打架。 */
+
+/* 逐字轻微上浮 */
+.lyric-line.active .syl { transition: transform .3s var(--ease); }
+.lyric-line.active .syl.up { transform: translateY(-2px); }
+
+.lyric-trans { display: block; font-size: .52em; font-weight: 400;
+  color: color-mix(in srgb, var(--fg) 52%, transparent); margin-top: 5px; letter-spacing: .04em; }
+
+/* 无歌词时不要被 50% 的留白挤到看不见 */
+.lyrics-empty { color: var(--fg-2); font-size: 14px; letter-spacing: .06em;
+  display: grid; place-items: center; min-height: 160px; }
+
+/* ---------- 最大化底部控制 ---------- */
+.pmax-foot { position: relative; z-index: 2; padding: 14px clamp(18px, 4vw, 40px) 26px; }
+
+/* 底部栏右侧吸附：歌词格式来源备注（不引用库本身，仅借鉴其格式） */
+.pmax-credit {
+  position: absolute; right: clamp(18px, 4vw, 40px); bottom: 6px;
+  font-size: 10px; letter-spacing: .04em; color: color-mix(in srgb, var(--fg) 45%, transparent);
+  pointer-events: none; user-select: none;
+}
+
+.pmax-bar { display: flex; align-items: center; gap: 13px; }
+.pmax-bar .t { font-size: 12px; color: var(--fg-1); font-variant-numeric: tabular-nums; flex: 0 0 auto; }
+.pmax-seek { position: relative; flex: 1; height: 5px; background: rgba(255,255,255,.16); cursor: pointer; }
+.pmax-seek:hover { height: 8px; }
+.pmax-seek-fill { position: absolute; inset: 0 auto 0 0; background: var(--fg); width: 0; }
+
+.pmax-ctrls { display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 16px; }
+.pmax-ctrls .p-btn { width: 44px; height: 44px; }
+.pmax-ctrls .p-btn svg { width: 19px; height: 19px; }
+/* .pmax 内部恒为深色背景，主按钮固定「白底黑字」，
+   不能用 var(--bg)，否则亮色模式下会变成白字白底 */
+.pmax-play { width: 60px !important; height: 60px !important;
+  background: var(--fg); color: #101014 !important; }
+.pmax-play:hover { background: var(--fg); filter: brightness(.9); }
+.pmax-play svg { width: 24px !important; height: 24px !important; }
+
+/* 音量 */
+.p-vol { display: flex; align-items: center; gap: 8px; }
+.p-vol input[type="range"] {
+  -webkit-appearance: none; appearance: none;
+  width: 82px; height: 4px; background: var(--line-2); cursor: pointer;
+}
+.p-vol input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; appearance: none;
+  width: 4px; height: 14px; background: var(--fg); border: 0; border-radius: 0;
+}
+.p-vol input[type="range"]::-moz-range-thumb {
+  width: 4px; height: 14px; background: var(--fg); border: 0; border-radius: 0;
+}
+
+@media (max-width: 560px) {
+  .pmax-body { padding-top: 6px; }
+  /* 窄屏 .pmax-info 无固定高度，歌词退回可滚动高度，上下留白改用 vh 保证居中 */
+  .lyrics { flex: 0 0 auto; max-height: 46vh; }
+  .lyrics-pad { height: 23vh; }
+}
+
+/* ---------- 小窗音量（JS 控制 .open，聚焦后向上弹出竖向音量条） ---------- */
+.p-vol-dock { position: relative; display: inline-flex; align-items: center; }
+.p-vol-pop {
+  position: absolute; bottom: 100%; right: 0;
+  width: 28px; padding: 8px 0;
+  display: flex; justify-content: center;
+  background: var(--bg-2, #fff);
+  border: 1px solid var(--line, rgba(0,0,0,.12));
+  border-radius: 0;
+  opacity: 0; visibility: hidden; pointer-events: none;
+  transform: translateY(6px);
+  transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease), visibility var(--dur);
+  box-shadow: 0 8px 24px rgba(0,0,0,.18);
+}
+/* 透明桥接区：覆盖图标与弹出层之间的空隙，鼠标移动路径始终在容器内，避免失焦 */
+.p-vol-pop::after {
+  content: ""; position: absolute; left: 0; right: 0; top: 100%; height: 10px;
+}
+.p-vol-dock.open .p-vol-pop {
+  opacity: 1; visibility: visible; pointer-events: auto; transform: none;
+}
+/* 竖向滑块：自下而上增长，长度约等于原横向条（72px） */
+.p-vol-pop input[type="range"] {
+  -webkit-appearance: none; appearance: none;
+  writing-mode: vertical-lr; direction: rtl;
+  width: 4px; height: 72px; margin: 0;
+  background: var(--line-2, #888); border-radius: 0; cursor: pointer;
+}
+.p-vol-pop input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; appearance: none;
+  width: 10px; height: 4px; border-radius: 0;
+  background: var(--fg, #222); border: none; cursor: pointer;
+}
+.p-vol-pop input[type="range"]::-moz-range-thumb {
+  width: 10px; height: 12px; border-radius: 0;
+  background: var(--fg, #222); border: none; cursor: pointer;
+}
+
+/* ---------- 全屏播放列表（右侧抽屉） ---------- */
+.pmax-queue {
+  position: absolute; top: 0; right: 0; bottom: 0; z-index: 3;
+  width: min(360px, 86vw);
+  background: rgba(12, 12, 16, .82);
+  backdrop-filter: saturate(160%) blur(26px);
+  -webkit-backdrop-filter: saturate(160%) blur(26px);
+  border-left: 1px solid rgba(255, 255, 255, .14);
+  transform: translateX(100%);
+  transition: transform .38s var(--ease);
+  display: flex; flex-direction: column;
+}
+.pmax-queue.open { transform: none; }
+.pmax-queue .p-queue-inner { flex: 1; max-height: none; overflow-y: auto; }
+.pmax-queue .p-queue-head {
+  background: rgba(12, 12, 16, .92); position: sticky; top: 0; z-index: 1;
+}
+.pmax-queue .p-q-item { border-bottom: 1px solid rgba(255, 255, 255, .1); }
+
+@media (max-width: 900px) {
+  .pmax-queue { width: 100vw; border-left: 0; }
+}

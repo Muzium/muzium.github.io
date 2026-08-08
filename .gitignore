@@ -1,0 +1,11 @@
+# 字体构建缓存（上游 OTF，每个约 22MB，不入库）
+site/tools/.cache/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# 系统
+.DS_Store
+Thumbs.db
+desktop.ini

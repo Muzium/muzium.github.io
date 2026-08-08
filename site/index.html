@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Muzium · 藏声馆</title>
+<meta name="description" content="Muzium 藏声馆 — 虚拟原创角色信息公开、声库试听与成品歌曲欣赏。">
+<link rel="icon" href="../assets/icon/Icon_01.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/font.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/player.css">
+<script>
+  // 尽早写入主题，避免首屏闪白/闪黑
+  (function () {
+    try {
+      var t = localStorage.getItem('muzium.theme');
+      if (!t) t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      document.documentElement.dataset.theme = t;
+    } catch (e) { /* 隐私模式下忽略 */ }
+  })();
+</script>
+</head>
+<body>
+
+<header class="topbar" id="topbar">
+  <a class="brand" href="#/" aria-label="Muzium 藏声馆 首页">
+    <span class="brand-mark" id="brandMark" aria-hidden="true"></span>
+  </a>
+
+  <button class="nav-toggle" id="navToggle" aria-label="菜单" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav class="nav" id="nav"><!-- 由 app.js 注入 --></nav>
+
+  <button class="theme-toggle" id="themeToggle" aria-label="切换配色" title="切换亮色 / 暗色"></button>
+</header>
+
+<main id="view" class="view"><!-- 路由视图 --></main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span class="footer-mark" id="footerMark" aria-hidden="true"></span>
+    <p class="footer-note">
+      本站所有角色形象与歌声数据库版权归各自著作者所有。<br>
+      使用前请阅读<a href="#/page/eula">用户使用规范</a>。<br>
+      Font: GenWanMin © ButTaiwan, SIL OFL 1.1
+    </p>
+  </div>
+</footer>
+
+<!-- 全局播放器：常驻左下角，路由切换不中断播放 -->
+<div id="player-root"></div>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
